@@ -47,9 +47,6 @@ margin_right = 240.0
 rect_min_size = Vector2( 320, 0 )
 custom_constants/separation = 10
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="IconBorder" type="ColorRect" parent="."]
 margin_right = 100.0
@@ -64,13 +61,10 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="InfoBorder" type="TextureRect" parent="."]
 margin_left = 110.0
-margin_right = 370.0
+margin_right = 260.0
 margin_bottom = 100.0
 size_flags_horizontal = 3
 texture = ExtResource( 5 )
@@ -132,9 +126,8 @@ rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="DraftIcon" type="TextureRect" parent="."]
-visible = false
-margin_left = 380.0
-margin_right = 480.0
+margin_left = 270.0
+margin_right = 370.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 100, 100 )
 texture = ExtResource( 3 )
@@ -152,9 +145,6 @@ custom_fonts/font = SubResource( 3 )
 text = "0"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="GoButton" type="TextureRect" parent="."]
 margin_left = 380.0

@@ -71,66 +71,54 @@ use_filter = true
 font_data = ExtResource( 4 )
 
 [node name="Menu" instance=ExtResource( 1 )]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -90.0
-margin_top = -145.0
-margin_right = 90.0
-margin_bottom = 145.0
+anchor_left = 0.427
+anchor_top = 0.571
+anchor_right = 0.502
+anchor_bottom = 0.632
+margin_left = -49.0
+margin_top = -144.0
+margin_right = 126.0
+margin_bottom = 18.0
 custom_constants/separation = 12
 script = ExtResource( 3 )
 
 [node name="MarginMid1" type="ColorRect" parent="." index="0"]
-margin_right = 180.0
+margin_right = 270.0
 margin_bottom = 5.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="PlayOnline" parent="." index="1" instance=ExtResource( 2 )]
 margin_top = 17.0
-margin_bottom = 83.0
+margin_right = 270.0
+margin_bottom = 88.0
 rect_min_size = Vector2( 180, 50 )
 text = "Play Online"
 flat = true
 
 [node name="MarginMid2" type="ColorRect" parent="." index="2"]
-margin_top = 95.0
-margin_right = 180.0
-margin_bottom = 100.0
+margin_top = 100.0
+margin_right = 270.0
+margin_bottom = 105.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="Options" parent="." index="3" instance=ExtResource( 2 )]
-margin_top = 112.0
-margin_bottom = 178.0
+margin_top = 117.0
+margin_right = 270.0
+margin_bottom = 188.0
 rect_min_size = Vector2( 180, 50 )
 text = "Options"
 flat = true
 
-[node name="MarginMid4" type="ColorRect" parent="." index="4"]
-margin_top = 190.0
-margin_right = 180.0
-margin_bottom = 195.0
+[node name="MarginMid5" type="ColorRect" parent="." index="4"]
+margin_top = 200.0
+margin_right = 270.0
+margin_bottom = 205.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="Quit" parent="." index="5" instance=ExtResource( 2 )]
-margin_top = 207.0
-margin_bottom = 273.0
-rect_min_size = Vector2( 180, 50 )
-text = "Quit"
-flat = true
-
-[node name="MarginMid5" type="ColorRect" parent="." index="6"]
-margin_top = 285.0
-margin_right = 180.0
-margin_bottom = 290.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="Overlay" type="CanvasLayer" parent="." index="7"]
+[node name="Overlay" type="CanvasLayer" parent="." index="5"]
 
 [node name="QuitConfirm" type="ColorRect" parent="Overlay" index="0"]
 pause_mode = 2
@@ -369,7 +357,6 @@ color = Color( 0, 0, 0, 1 )
 
 [connection signal="pressed" from="PlayOnline" to="." method="play"]
 [connection signal="pressed" from="Options" to="." method="options"]
-[connection signal="pressed" from="Quit" to="." method="quit"]
 [connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_confirm" to="." method="quit_confirm"]
 [connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_cancel" to="." method="quit_cancel"]
 [connection signal="options_saved" from="Overlay/OptionsOverlay/OptionsMenu" to="." method="_on_OptionsMenu_options_saved"]

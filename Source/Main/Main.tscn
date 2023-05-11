@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Source/Background/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Source/Main/Menu.tscn" type="PackedScene" id=2]
@@ -11,12 +11,15 @@
 [ext_resource path="res://Assets/Graphics/Icons/reset_icons/reset_normal.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Graphics/Icons/reset_icons/reset_disabled.png" type="Texture" id=11]
 
+[sub_resource type="DynamicFontData" id=12]
+
 [sub_resource type="DynamicFont" id=1]
 size = 96
 outline_size = 5
 outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 3 )
+fallback/0 = SubResource( 12 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 24
@@ -116,6 +119,10 @@ margin_right = 640.0
 margin_bottom = 360.0
 
 [node name="Overlay" parent="Map" index="1"]
+margin_left = -5.0
+margin_top = 1.0
+margin_right = -5.0
+margin_bottom = 1.0
 color = Color( 0.321569, 0.168627, 0.168627, 0.196078 )
 
 [node name="MenuBorder" type="TextureRect" parent="."]
@@ -124,10 +131,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -125.0
-margin_top = -58.0
-margin_right = 125.0
-margin_bottom = 262.0
+margin_left = -104.0
+margin_top = -27.0
+margin_right = 149.0
+margin_bottom = 134.0
 texture = ExtResource( 6 )
 expand = true
 
@@ -139,37 +146,37 @@ anchor_bottom = 1.0
 margin_left = 0.0
 margin_top = 0.0
 margin_right = 0.0
-margin_bottom = 0.0
+margin_bottom = 2.0
+alignment = 1
 
 [node name="HeadingBorder" type="TextureRect" parent="."]
 self_modulate = Color( 0.360784, 0.360784, 0.360784, 0.607843 )
-margin_left = 407.753
-margin_top = 81.357
-margin_right = 859.753
-margin_bottom = 197.357
+margin_left = 306.0
+margin_top = 61.357
+margin_right = 1018.75
+margin_bottom = 177.357
 texture = ExtResource( 6 )
 expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HeadingBorder"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -15.0
+margin_right = 23.247
 
 [node name="MarginMid1" type="ColorRect" parent="HeadingBorder/VBoxContainer"]
-margin_right = 528.0
+margin_right = 750.0
 margin_bottom = 5.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="Heading" type="Label" parent="HeadingBorder/VBoxContainer"]
 margin_top = 9.0
-margin_right = 528.0
-margin_bottom = 106.0
+margin_right = 750.0
+margin_bottom = 107.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
-text = "Crypto Wars"
+text = "Conflict of War"
 align = 1
 valign = 1
 __meta__ = {
@@ -177,9 +184,9 @@ __meta__ = {
 }
 
 [node name="MarginMid2" type="ColorRect" parent="HeadingBorder/VBoxContainer"]
-margin_top = 110.0
-margin_right = 528.0
-margin_bottom = 115.0
+margin_top = 111.0
+margin_right = 750.0
+margin_bottom = 116.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
