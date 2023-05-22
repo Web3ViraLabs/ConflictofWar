@@ -1,4 +1,4 @@
-extends VMenu
+extends Control
 
 class_name MainMenu
 
@@ -8,6 +8,7 @@ onready var start_game_overlay = $Overlay/StartGameOverlay
 onready var options_overlay = $Overlay/OptionsOverlay
 onready var offline_overlay = $Overlay/OfflineOverlay
 onready var players_range = $Overlay/OfflineOverlay/Container/Info/PlayersRange
+onready var banner_update_anim = $BannerUpdate/AnimationPlayer
 
 signal options_saved
 
@@ -28,6 +29,22 @@ func play():
 func options():
 	options_overlay.show()
 
+func notifications() -> void:
+	pass # Replace with function body.
+
+func connect_wallet() -> void:
+	pass # Replace with function body.
+
+func discord() -> void:
+	OS.shell_open("https://discord.gg/EZnUANXP")
+	pass # Replace with function body.
+
+func twitter() -> void:
+	OS.shell_open("https://twitter.com/")
+
+func shop() -> void:
+	pass # Replace with function body.
+
 func quit():
 	quit_confirm_menu.show()
 	quit_confirm_vmenu.grab_focus_on_index_child()
@@ -39,7 +56,7 @@ func quit_confirm():
 func quit_cancel():
 	quit_confirm_menu.hide()
 	set_process_unhandled_input(true)
-	grab_focus_on_index_child()
+	#grab_focus_on_index_child()
 
 func _on_OptionsMenu_options_saved():
 	emit_signal("options_saved")
@@ -54,3 +71,8 @@ func create_offline_game():
 
 func cancel_offline_game():
 	offline_overlay.hide()
+
+
+func banner_animation_finished(anim_name: String) -> void:
+	if anim_name == "move_in":
+		banner_update_anim.play("scale")

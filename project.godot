@@ -89,7 +89,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Source/Main/Main.gd"
 }, {
-"base": "VMenu",
+"base": "Control",
 "class": "MainMenu",
 "language": "GDScript",
 "path": "res://Source/Main/Menu.gd"
@@ -149,6 +149,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Source/Button/Button.gd"
 }, {
+"base": "TextureButton",
+"class": "SmartTextureButton",
+"language": "GDScript",
+"path": "res://Source/TextureButton/SmartTextureButton.gd"
+}, {
 "base": "TextureRect",
 "class": "StartGameMenu",
 "language": "GDScript",
@@ -198,6 +203,7 @@ _global_script_class_icons={
 "QuitGameMenu": "",
 "SelectedState": "",
 "SmartButton": "",
+"SmartTextureButton": "",
 "StartGameMenu": "",
 "StateMachine": "",
 "VMenu": "",

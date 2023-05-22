@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Source/Menu/VMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Source/Button/Button.tscn" type="PackedScene" id=2]
@@ -8,18 +8,89 @@
 [ext_resource path="res://Source/Gameplay/HUD/StartGameMenu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Source/Gameplay/HUD/OptionsMenu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Source/Menu/HMenu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Graphics/HomeScreen/Demo.png" type="Texture" id=9]
+[ext_resource path="res://Source/TextureButton/SmartTextureButton.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/Graphics/HomeScreen/BattleButton.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Graphics/HomeScreen/MenuButton.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Graphics/HomeScreen/NotificationButton.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Graphics/HomeScreen/LevelState.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Graphics/HomeScreen/WalletConnectButton.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Graphics/HomeScreen/DiscordButton.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Graphics/HomeScreen/TwitterButton.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Graphics/HomeScreen/ShopButton.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Graphics/HomeScreen/BannerUpdates.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Graphics/HomeScreen/ProfileCharector.png" type="Texture" id=20]
 
-[sub_resource type="DynamicFont" id=1]
-size = 48
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 4 )
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 961, 146 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 327, 186 ) ]
+}
 
-[sub_resource type="DynamicFont" id=2]
-size = 32
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 4 )
+[sub_resource type="Animation" id=10]
+resource_name = "move_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 3 ),
+"transitions": PoolRealArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 1279, 146 ), Vector2( 1279, 146 ), Vector2( 952, 146 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "scale"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( -2, -2, -2 ),
+"update": 0,
+"values": [ Vector2( 952, 146 ), Vector2( 983, 146 ), Vector2( 952, 146 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( -2, -2, -2 ),
+"update": 0,
+"values": [ Vector2( 327, 186 ), Vector2( 296, 186 ), Vector2( 327, 186 ) ]
+}
 
 [sub_resource type="DynamicFont" id=7]
 size = 36
@@ -70,149 +141,154 @@ outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 4 )
 
-[node name="Menu" instance=ExtResource( 1 )]
-anchor_left = 0.427
-anchor_top = 0.571
-anchor_right = 0.502
-anchor_bottom = 0.632
-margin_left = -49.0
-margin_top = -144.0
-margin_right = 126.0
-margin_bottom = 18.0
-custom_constants/separation = 12
-script = ExtResource( 3 )
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
 
-[node name="MarginMid1" type="ColorRect" parent="." index="0"]
-margin_right = 270.0
-margin_bottom = 5.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
 
-[node name="PlayOnline" parent="." index="1" instance=ExtResource( 2 )]
-margin_top = 17.0
-margin_right = 270.0
-margin_bottom = 88.0
-rect_min_size = Vector2( 180, 50 )
-text = "Play Online"
-flat = true
-
-[node name="MarginMid2" type="ColorRect" parent="." index="2"]
-margin_top = 100.0
-margin_right = 270.0
-margin_bottom = 105.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="Options" parent="." index="3" instance=ExtResource( 2 )]
-margin_top = 117.0
-margin_right = 270.0
-margin_bottom = 188.0
-rect_min_size = Vector2( 180, 50 )
-text = "Options"
-flat = true
-
-[node name="MarginMid5" type="ColorRect" parent="." index="4"]
-margin_top = 200.0
-margin_right = 270.0
-margin_bottom = 205.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="Overlay" type="CanvasLayer" parent="." index="5"]
-
-[node name="QuitConfirm" type="ColorRect" parent="Overlay" index="0"]
-pause_mode = 2
-visible = false
+[node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0, 0, 0, 0.686275 )
+script = ExtResource( 3 )
 
-[node name="ColorRect" type="TextureRect" parent="Overlay/QuitConfirm" index="0"]
+[node name="Demo" type="TextureRect" parent="."]
+visible = false
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 1280, 720 )
+texture = ExtResource( 9 )
+expand = true
+
+[node name="ProfileCharector" type="TextureRect" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -210.0
-margin_top = -140.0
-margin_right = 210.0
-margin_bottom = 189.0
-texture = ExtResource( 5 )
+margin_left = -166.0
+margin_top = -236.0
+margin_right = 218.0
+margin_bottom = 157.0
+texture = ExtResource( 20 )
+expand = true
+stretch_mode = 6
+
+[node name="PlayOnline" parent="." instance=ExtResource( 10 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -196.0
+margin_top = 148.0
+margin_right = 184.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 380, 100 )
+texture_normal = ExtResource( 11 )
+
+[node name="Options" parent="." instance=ExtResource( 10 )]
+margin_left = 41.0
+margin_top = 22.0
+margin_right = 143.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 102, 102 )
+texture_normal = ExtResource( 12 )
+
+[node name="Notifications" parent="." instance=ExtResource( 10 )]
+margin_left = 155.0
+margin_top = 20.0
+margin_right = 257.0
+margin_bottom = 122.0
+rect_min_size = Vector2( 102, 102 )
+texture_normal = ExtResource( 13 )
+
+[node name="LevelStat" type="TextureRect" parent="."]
+margin_left = 272.0
+margin_top = 1.0
+margin_right = 527.0
+margin_bottom = 146.0
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 6
+
+[node name="BannerUpdate" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -319.0
+margin_top = 146.0
+margin_right = 8.0
+margin_bottom = 332.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource( 19 )
 expand = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Overlay/QuitConfirm/ColorRect" index="0"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BannerUpdate"]
+autoplay = "move_in"
+anims/RESET = SubResource( 9 )
+anims/move_in = SubResource( 10 )
+anims/scale = SubResource( 11 )
+
+[node name="WalletConnect" parent="." instance=ExtResource( 10 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -288.0
+margin_top = 30.0
+margin_right = -34.0
+margin_bottom = 118.0
+rect_min_size = Vector2( 254, 88 )
+texture_normal = ExtResource( 15 )
+
+[node name="Discord" parent="." instance=ExtResource( 10 )]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 27.0
+margin_top = -118.0
+margin_right = 287.0
+margin_bottom = -26.0
+rect_min_size = Vector2( 254, 88 )
+texture_normal = ExtResource( 16 )
+
+[node name="Twitter" parent="." instance=ExtResource( 10 )]
+anchor_left = 1.0
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_left = -246.0
+margin_top = -122.0
+margin_right = -144.0
+margin_bottom = -20.0
+rect_min_size = Vector2( 102, 102 )
+texture_normal = ExtResource( 17 )
 
-[node name="VMenu" parent="Overlay/QuitConfirm/ColorRect/MarginContainer" index="0" instance=ExtResource( 1 )]
-margin_right = 420.0
-margin_bottom = 329.0
+[node name="Shop" parent="." instance=ExtResource( 10 )]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -139.0
+margin_top = -120.0
+margin_right = -37.0
+margin_bottom = -18.0
+rect_min_size = Vector2( 102, 102 )
+texture_normal = ExtResource( 18 )
 
-[node name="MarginTop" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="0"]
-margin_right = 420.0
-margin_bottom = 5.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
+[node name="Overlay" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="1"]
-margin_top = 25.0
-margin_right = 420.0
-margin_bottom = 88.0
-size_flags_vertical = 7
-custom_fonts/font = SubResource( 1 )
-text = "Quit Game?"
-align = 1
-valign = 1
-autowrap = true
-
-[node name="MarginMid1" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="2"]
-margin_top = 108.0
-margin_right = 420.0
-margin_bottom = 113.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="quit_confirm" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="3" instance=ExtResource( 2 )]
-margin_top = 133.0
-margin_right = 420.0
-margin_bottom = 196.0
-custom_fonts/font = SubResource( 2 )
-text = "Yes"
-flat = true
-
-[node name="MarginMid2" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="4"]
-margin_top = 216.0
-margin_right = 420.0
-margin_bottom = 221.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="quit_cancel" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="5" instance=ExtResource( 2 )]
-margin_top = 241.0
-margin_right = 420.0
-margin_bottom = 304.0
-custom_fonts/font = SubResource( 2 )
-text = "No"
-flat = true
-
-[node name="MarginBottom" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" index="6"]
-margin_top = 324.0
-margin_right = 420.0
-margin_bottom = 329.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="StartGameOverlay" type="ColorRect" parent="Overlay" index="1"]
+[node name="StartGameOverlay" type="ColorRect" parent="Overlay"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.686275 )
 
-[node name="StartGameMenu" parent="Overlay/StartGameOverlay" index="0" instance=ExtResource( 6 )]
+[node name="StartGameMenu" parent="Overlay/StartGameOverlay" instance=ExtResource( 6 )]
 
-[node name="OptionsOverlay" type="ColorRect" parent="Overlay" index="2"]
+[node name="OptionsOverlay" type="ColorRect" parent="Overlay"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -221,15 +297,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OptionsMenu" parent="Overlay/OptionsOverlay" index="0" instance=ExtResource( 7 )]
+[node name="OptionsMenu" parent="Overlay/OptionsOverlay" instance=ExtResource( 7 )]
 
-[node name="OfflineOverlay" type="ColorRect" parent="Overlay" index="3"]
+[node name="OfflineOverlay" type="ColorRect" parent="Overlay"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.25098 )
 
-[node name="Container" type="TextureRect" parent="Overlay/OfflineOverlay" index="0"]
+[node name="Container" type="TextureRect" parent="Overlay/OfflineOverlay"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -243,19 +319,19 @@ theme = SubResource( 3 )
 texture = ExtResource( 5 )
 expand = true
 
-[node name="Info" type="VBoxContainer" parent="Overlay/OfflineOverlay/Container" index="0"]
+[node name="Info" type="VBoxContainer" parent="Overlay/OfflineOverlay/Container"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_bottom = -226.0
 rect_min_size = Vector2( 260, 252 )
 
-[node name="MarginTop" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info" index="0"]
+[node name="MarginTop" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_right = 480.0
 margin_bottom = 5.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="Label" type="Label" parent="Overlay/OfflineOverlay/Container/Info" index="1"]
+[node name="Label" type="Label" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 9.0
 margin_right = 480.0
 margin_bottom = 58.0
@@ -268,14 +344,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginMid1" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info" index="2"]
+[node name="MarginMid1" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 62.0
 margin_right = 480.0
 margin_bottom = 67.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="Info" type="Label" parent="Overlay/OfflineOverlay/Container/Info" index="3"]
+[node name="Info" type="Label" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 71.0
 margin_right = 480.0
 margin_bottom = 108.0
@@ -288,14 +364,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginMid2" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info" index="4"]
+[node name="MarginMid2" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 112.0
 margin_right = 480.0
 margin_bottom = 117.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="PlayersRange" type="SpinBox" parent="Overlay/OfflineOverlay/Container/Info" index="5"]
+[node name="PlayersRange" type="SpinBox" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 121.0
 margin_right = 480.0
 margin_bottom = 170.0
@@ -305,62 +381,152 @@ max_value = 6.0
 value = 2.0
 align = 1
 
-[node name="MarginMid3" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info" index="6"]
+[node name="MarginMid3" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 174.0
 margin_right = 480.0
 margin_bottom = 179.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="HMenu" parent="Overlay/OfflineOverlay/Container/Info" index="7" instance=ExtResource( 8 )]
+[node name="HMenu" parent="Overlay/OfflineOverlay/Container/Info" instance=ExtResource( 8 )]
 margin_top = 183.0
 margin_right = 480.0
 margin_bottom = 243.0
 size_flags_vertical = 3
 
-[node name="MarginLeft" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu" index="0"]
+[node name="MarginLeft" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
 margin_top = 11.0
 margin_bottom = 48.0
 
-[node name="Cancel" parent="Overlay/OfflineOverlay/Container/Info/HMenu" index="1" instance=ExtResource( 2 )]
+[node name="Cancel" parent="Overlay/OfflineOverlay/Container/Info/HMenu" instance=ExtResource( 2 )]
 margin_left = 20.0
 margin_right = 220.0
 custom_fonts/font = SubResource( 5 )
 text = "Cancel"
 flat = true
 
-[node name="MarginMid" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu" index="2"]
+[node name="MarginMid" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
 margin_left = 240.0
 margin_top = 11.0
 margin_right = 240.0
 margin_bottom = 48.0
 
-[node name="Create" parent="Overlay/OfflineOverlay/Container/Info/HMenu" index="3" instance=ExtResource( 2 )]
+[node name="Create" parent="Overlay/OfflineOverlay/Container/Info/HMenu" instance=ExtResource( 2 )]
 margin_left = 260.0
 margin_right = 460.0
 custom_fonts/font = SubResource( 5 )
 text = "Create"
 flat = true
 
-[node name="MarginRight" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu" index="4"]
+[node name="MarginRight" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
 margin_left = 480.0
 margin_top = 11.0
 margin_right = 480.0
 margin_bottom = 48.0
 
-[node name="MarginBottom" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info" index="8"]
+[node name="MarginBottom" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
 margin_top = 247.0
 margin_right = 480.0
 margin_bottom = 252.0
 rect_min_size = Vector2( 0, 5 )
 color = Color( 0, 0, 0, 1 )
 
+[node name="QuitConfirm" type="ColorRect" parent="Overlay"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.686275 )
+
+[node name="ColorRect" type="TextureRect" parent="Overlay/QuitConfirm"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -210.0
+margin_top = -140.0
+margin_right = 210.0
+margin_bottom = 189.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Overlay/QuitConfirm/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VMenu" parent="Overlay/QuitConfirm/ColorRect/MarginContainer" instance=ExtResource( 1 )]
+margin_right = 420.0
+margin_bottom = 329.0
+
+[node name="MarginTop" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_right = 420.0
+margin_bottom = 5.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 25.0
+margin_right = 420.0
+margin_bottom = 88.0
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 1 )
+text = "Quit Game?"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginMid1" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 108.0
+margin_right = 420.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="quit_confirm" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" instance=ExtResource( 2 )]
+margin_top = 133.0
+margin_right = 420.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 2 )
+text = "Yes"
+flat = true
+
+[node name="MarginMid2" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 216.0
+margin_right = 420.0
+margin_bottom = 221.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="quit_cancel" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" instance=ExtResource( 2 )]
+margin_top = 241.0
+margin_right = 420.0
+margin_bottom = 304.0
+custom_fonts/font = SubResource( 2 )
+text = "No"
+flat = true
+
+[node name="MarginBottom" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 324.0
+margin_right = 420.0
+margin_bottom = 329.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
 [connection signal="pressed" from="PlayOnline" to="." method="play"]
 [connection signal="pressed" from="Options" to="." method="options"]
-[connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_confirm" to="." method="quit_confirm"]
-[connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_cancel" to="." method="quit_cancel"]
+[connection signal="pressed" from="Notifications" to="." method="notifications"]
+[connection signal="animation_finished" from="BannerUpdate/AnimationPlayer" to="." method="banner_animation_finished"]
+[connection signal="pressed" from="WalletConnect" to="." method="connect_wallet"]
+[connection signal="pressed" from="Discord" to="." method="discord"]
+[connection signal="pressed" from="Twitter" to="." method="twitter"]
+[connection signal="pressed" from="Shop" to="." method="shop"]
 [connection signal="options_saved" from="Overlay/OptionsOverlay/OptionsMenu" to="." method="_on_OptionsMenu_options_saved"]
 [connection signal="pressed" from="Overlay/OfflineOverlay/Container/Info/HMenu/Cancel" to="." method="cancel_offline_game"]
 [connection signal="pressed" from="Overlay/OfflineOverlay/Container/Info/HMenu/Create" to="." method="create_offline_game"]
+[connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_confirm" to="." method="quit_confirm"]
+[connection signal="pressed" from="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu/quit_cancel" to="." method="quit_cancel"]
 
 [editable path="Overlay/OfflineOverlay/Container/Info/HMenu/Cancel"]

@@ -49,14 +49,14 @@ func _on_Connect_pressed(ip=ip_edit.text):
 func server_connected():
 	success_label.show()
 	error_label.hide()
-	get_node("MenuBorder/Menu/PlayOnline").disabled = false
-	get_node("MenuBorder/Menu/Overlay/OptionsOverlay/OptionsMenu/Info/NameEdit").editable = true
+	get_node("Menu/PlayOnline").disabled = false
+	get_node("Menu/Overlay/OptionsOverlay/OptionsMenu/Info/NameEdit").editable = true
 
 func server_not_connected():
 	success_label.hide()
 	error_label.show()
-	get_node("MenuBorder/Menu/PlayOnline").disabled = true
-	get_node("MenuBorder/Menu/Overlay/OptionsOverlay/OptionsMenu/Info/NameEdit").editable = false
+	get_node("Menu/PlayOnline").disabled = true
+	get_node("Menu/Overlay/OptionsOverlay/OptionsMenu/Info/NameEdit").editable = false
 
 
 func _on_ResetIP_pressed():

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Audio/glitch_002.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/glitch_001.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Source/TextureButton/SmartTextureButton.gd" type="Script" id=3]
+
+[node name="SmartTextureButton" type="TextureButton"]
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+stretch_mode = 5
+script = ExtResource( 3 )
+
+[node name="Focused" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Pressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[connection signal="focus_entered" from="." to="." method="focus_entered"]
+[connection signal="pressed" from="." to="." method="button_pressed"]
