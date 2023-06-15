@@ -1,12 +1,19 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Assets/Fonts/no_virus/No Virus.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Source/Button/Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Source/Menu/HMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Graphics/Textures/old_paper.png" type="Texture" id=4]
 [ext_resource path="res://Source/Gameplay/HUD/HostGameMenu.gd" type="Script" id=5]
-[ext_resource path="res://Source/Gameplay/Map/Map.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Source/Background/Background.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/back.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/header.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/reference-image.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/body-panel.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/Create-Button.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/minus.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/incremental-panel.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/plus.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Create-Conflict-Screen (1)/background.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=7]
 size = 36
@@ -36,20 +43,6 @@ LineEdit/styles/focus = SubResource( 6 )
 LineEdit/styles/normal = SubResource( 6 )
 LineEdit/styles/read_only = SubResource( 6 )
 
-[sub_resource type="DynamicFont" id=4]
-size = 48
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=5]
-size = 36
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 1 )
-
 [sub_resource type="DynamicFont" id=8]
 size = 32
 outline_size = 3
@@ -57,222 +50,250 @@ outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 1 )
 
+[sub_resource type="Theme" id=16]
+LineEdit/colors/clear_button_color = Color( 0, 0, 0, 1 )
+LineEdit/colors/selection_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0, 0, 0.784314 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0, 0, 0, 0.45098 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 36
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=14]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=15]
+size = 72
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 14 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0, 0, 0, 0.784314 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0, 0, 0, 0.45098 )
+
+[sub_resource type="DynamicFontData" id=12]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=13]
+size = 58
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = SubResource( 12 )
+
 [node name="HostGameMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = SubResource( 3 )
 script = ExtResource( 5 )
 
-[node name="Background" parent="." instance=ExtResource( 7 )]
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 633, 375 )
+scale = Vector2( 0.542326, 0.545185 )
+texture = ExtResource( 14 )
 
-[node name="ColorRect" parent="Background" index="0"]
-color = Color( 0.137255, 0.670588, 0.878431, 1 )
+[node name="Button" type="Button" parent="Background"]
+show_behind_parent = true
+margin_left = -192.501
+margin_top = -146.425
+margin_right = -74.501
+margin_bottom = -25.425
 
-[node name="Map" parent="." instance=ExtResource( 6 )]
+[node name="Button2" type="Button" parent="Background"]
+show_behind_parent = true
+margin_left = 92.346
+margin_top = -144.265
+margin_right = 208.346
+margin_bottom = -28.265
 
-[node name="Host" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -240.0
-margin_top = -239.0
-margin_right = 240.0
-margin_bottom = 239.0
-texture = ExtResource( 4 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="HMenu" parent="Background" instance=ExtResource( 3 )]
+margin_left = -1230.0
+margin_top = -598.0
+margin_right = -898.0
+margin_bottom = -462.0
+size_flags_vertical = 3
 
-[node name="Info" type="VBoxContainer" parent="Host"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_min_size = Vector2( 260, 0 )
+[node name="Cancel" parent="Background/HMenu" instance=ExtResource( 2 )]
+show_behind_parent = true
+margin_right = 332.0
+margin_bottom = 136.0
+custom_fonts/font = SubResource( 8 )
+text = ""
+flat = true
 
-[node name="MarginTop" type="ColorRect" parent="Host/Info"]
-margin_right = 480.0
-margin_bottom = 5.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
+[node name="Header" type="Sprite" parent="."]
+position = Vector2( 631.5, 45.3785 )
+scale = Vector2( 0.686765, 0.756972 )
+texture = ExtResource( 7 )
 
-[node name="Label" type="Label" parent="Host/Info"]
-margin_top = 9.0
-margin_right = 480.0
-margin_bottom = 58.0
-size_flags_horizontal = 3
-custom_fonts/font = SubResource( 4 )
-text = "Create a Game"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Body-panel" type="Sprite" parent="."]
+position = Vector2( 645.5, 409.25 )
+scale = Vector2( 0.335172, 0.341684 )
+texture = ExtResource( 9 )
 
-[node name="MarginMid1" type="ColorRect" parent="Host/Info"]
-margin_top = 62.0
-margin_right = 480.0
-margin_bottom = 67.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
+[node name="Reference-image" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 365 )
+scale = Vector2( 0.449653, 0.453086 )
+z_index = -690
+texture = ExtResource( 8 )
 
-[node name="Name" type="Label" parent="Host/Info"]
-margin_top = 71.0
-margin_right = 480.0
-margin_bottom = 108.0
+[node name="LobbyName" type="LineEdit" parent="."]
+margin_left = 428.0
+margin_top = 173.0
+margin_right = 853.0
+margin_bottom = 223.0
+rect_min_size = Vector2( 0, 50 )
+theme = SubResource( 16 )
+custom_styles/focus = SubResource( 19 )
+custom_styles/normal = SubResource( 17 )
+placeholder_text = "ex  Don pharos lobby"
+placeholder_alpha = 1.0
+
+[node name="Back" type="Sprite" parent="."]
+position = Vector2( 70.2353, 85 )
+scale = Vector2( 0.470588, 0.47191 )
+texture = ExtResource( 6 )
+
+[node name="Name" type="Label" parent="."]
+margin_left = 418.502
+margin_top = 136.346
+margin_right = 890.502
+margin_bottom = 173.346
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 5 )
 text = "Lobby Name *"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="MarginMid2" type="ColorRect" parent="Host/Info"]
-margin_top = 112.0
-margin_right = 480.0
-margin_bottom = 117.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="LobbyName" type="LineEdit" parent="Host/Info"]
-margin_top = 121.0
-margin_right = 480.0
-margin_bottom = 171.0
-rect_min_size = Vector2( 0, 50 )
-custom_colors/font_color_selected = Color( 0.588235, 0.588235, 0.588235, 1 )
-custom_colors/font_color_uneditable = Color( 0.588235, 0.588235, 0.588235, 1 )
+[node name="Name2" type="Label" parent="."]
+margin_left = 219.0
+margin_top = 32.0
+margin_right = 1067.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 15 )
+text = "Create a Conflict"
 align = 1
-placeholder_alpha = 1.0
+valign = 1
 
-[node name="MarginMid3" type="ColorRect" parent="Host/Info"]
-margin_top = 175.0
-margin_right = 480.0
-margin_bottom = 180.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="Info" type="Label" parent="Host/Info"]
-margin_top = 184.0
-margin_right = 480.0
-margin_bottom = 221.0
+[node name="Info2" type="Label" parent="."]
+margin_left = 481.0
+margin_top = 248.0
+margin_right = 834.0
+margin_bottom = 285.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 5 )
 text = "Number of players? *"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="MarginMid4" type="ColorRect" parent="Host/Info"]
-margin_top = 225.0
-margin_right = 480.0
-margin_bottom = 230.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="PlayersRange" type="SpinBox" parent="Host/Info"]
-margin_top = 234.0
-margin_right = 480.0
-margin_bottom = 283.0
-rect_min_size = Vector2( 0, 49 )
-min_value = 2.0
-max_value = 6.0
-value = 2.0
-align = 1
-
-[node name="MarginMid5" type="ColorRect" parent="Host/Info"]
-margin_top = 287.0
-margin_right = 480.0
-margin_bottom = 292.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="Password" type="Label" parent="Host/Info"]
-margin_top = 296.0
-margin_right = 480.0
-margin_bottom = 333.0
+[node name="Password" type="Label" parent="."]
+margin_left = 408.0
+margin_top = 501.0
+margin_right = 880.0
+margin_bottom = 538.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 5 )
 text = "Lobby Password"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="MarginMid6" type="ColorRect" parent="Host/Info"]
-margin_top = 337.0
-margin_right = 480.0
-margin_bottom = 342.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="LobbyPassword" type="LineEdit" parent="Host/Info"]
-margin_top = 346.0
-margin_right = 480.0
-margin_bottom = 396.0
+[node name="LobbyPassword" type="LineEdit" parent="."]
+margin_left = 419.0
+margin_top = 538.0
+margin_right = 844.0
+margin_bottom = 588.0
 rect_min_size = Vector2( 0, 50 )
 custom_colors/font_color_selected = Color( 0.588235, 0.588235, 0.588235, 1 )
 custom_colors/font_color_uneditable = Color( 0.588235, 0.588235, 0.588235, 1 )
+custom_styles/focus = SubResource( 20 )
+custom_styles/normal = SubResource( 18 )
 align = 1
+placeholder_text = "Ex 123"
 placeholder_alpha = 1.0
 
-[node name="MarginMid7" type="ColorRect" parent="Host/Info"]
-margin_top = 400.0
-margin_right = 480.0
-margin_bottom = 405.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
-
-[node name="HMenu" parent="Host/Info" instance=ExtResource( 3 )]
-margin_top = 409.0
-margin_right = 480.0
-margin_bottom = 469.0
-size_flags_vertical = 3
-
-[node name="MarginLeft" type="Label" parent="Host/Info/HMenu"]
-margin_top = 11.0
-margin_bottom = 48.0
-
-[node name="Cancel" parent="Host/Info/HMenu" instance=ExtResource( 2 )]
-margin_left = 20.0
-margin_right = 220.0
+[node name="Host2" parent="." instance=ExtResource( 2 )]
+margin_left = 529.0
+margin_top = 616.0
+margin_right = 746.0
+margin_bottom = 676.0
 custom_fonts/font = SubResource( 8 )
-text = "Cancel"
+text = ""
 flat = true
 
-[node name="MarginMid" type="Label" parent="Host/Info/HMenu"]
-margin_left = 240.0
-margin_top = 11.0
-margin_right = 240.0
-margin_bottom = 48.0
+[node name="Incremental-panel" type="Sprite" parent="."]
+position = Vector2( 638.245, 328.5 )
+scale = Vector2( 0.329714, 0.335979 )
+texture = ExtResource( 12 )
 
-[node name="Host" parent="Host/Info/HMenu" instance=ExtResource( 2 )]
-margin_left = 260.0
-margin_right = 460.0
-custom_fonts/font = SubResource( 8 )
+[node name="Label" type="Label" parent="."]
+margin_left = 622.0
+margin_top = 298.0
+margin_right = 673.0
+margin_bottom = 357.0
+custom_colors/font_color = Color( 0.529412, 0.796078, 0.156863, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "2"
+
+[node name="Minus" type="Sprite" parent="."]
+position = Vector2( 717.604, 329 )
+scale = Vector2( 0.451094, 0.443301 )
+texture = ExtResource( 13 )
+
+[node name="Plus" type="Sprite" parent="."]
+position = Vector2( 557, 330 )
+scale = Vector2( 0.367022, 0.322183 )
+texture = ExtResource( 11 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 502.0
+margin_top = 387.0
+margin_right = 869.0
+margin_bottom = 501.0
+text = "Bet Amount (SOL)"
+
+[node name="Create-Button" type="Sprite" parent="."]
+position = Vector2( 640.933, 655 )
+scale = Vector2( 0.339604, 0.341684 )
+texture = ExtResource( 10 )
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 586.0
+margin_top = 634.0
+margin_right = 953.0
+margin_bottom = 748.0
 text = "Create"
-flat = true
 
-[node name="MarginRight" type="Label" parent="Host/Info/HMenu"]
-margin_left = 480.0
-margin_top = 11.0
-margin_right = 480.0
-margin_bottom = 48.0
+[node name="Minus2" type="Sprite" parent="."]
+position = Vector2( 634.241, 471 )
+scale = Vector2( 5.231, 0.181 )
+texture = ExtResource( 11 )
 
-[node name="MarginBottom" type="ColorRect" parent="Host/Info"]
-margin_top = 473.0
-margin_right = 480.0
-margin_bottom = 478.0
-rect_min_size = Vector2( 0, 5 )
-color = Color( 0, 0, 0, 1 )
+[node name="Minus3" type="Sprite" parent="."]
+position = Vector2( 634.241, 591.382 )
+scale = Vector2( 5.231, 0.181 )
+texture = ExtResource( 11 )
 
-[connection signal="pressed" from="Host/Info/HMenu/Cancel" to="." method="_on_Cancel_pressed"]
-[connection signal="pressed" from="Host/Info/HMenu/Host" to="." method="_on_Host_pressed"]
+[node name="Minus4" type="Sprite" parent="."]
+position = Vector2( 634.241, 224.971 )
+scale = Vector2( 5.231, 0.181 )
+texture = ExtResource( 11 )
 
-[editable path="Background"]
-[editable path="Map"]
-[editable path="Host/Info/HMenu/Cancel"]
+[connection signal="pressed" from="Background/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Background/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Background/HMenu/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Host2" to="." method="_on_Host_pressed"]
+
+[editable path="Background/HMenu/Cancel"]

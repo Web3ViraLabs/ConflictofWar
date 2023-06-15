@@ -1,0 +1,1063 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://Assets/customisation/players-panel.png" type="Texture" id=1]
+[ext_resource path="res://Source/TextureButton/SmartTextureButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Graphics/ChooseMap/TournmentButton.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Graphics/ChooseMap/BackButton.png" type="Texture" id=4]
+[ext_resource path="res://Assets/customisation/header.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Graphics/ChooseMap/DownButton.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/minnie_2/Minnie.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Graphics/ChooseMap/Map.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Graphics/ChooseMap/NextButton.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Graphics/ChooseMap/Counter.png" type="Texture" id=10]
+[ext_resource path="res://Source/Main/ChooseMap.gd" type="Script" id=11]
+[ext_resource path="res://Assets/Graphics/ChooseMap/MapCard1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Graphics/ChooseMap/MapCard3.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Graphics/ChooseMap/MapCard2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Fonts/eastman_grotesque/Eastman-Grotesque-Bold-trial.otf" type="DynamicFontData" id=15]
+[ext_resource path="res://Source/Gameplay/HUD/StartGameMenu.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/Fonts/no_virus/No Virus.ttf" type="DynamicFontData" id=17]
+[ext_resource path="res://Assets/Graphics/Textures/old_paper.png" type="Texture" id=18]
+[ext_resource path="res://Source/Menu/HMenu.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Source/Button/Button.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Source/Gameplay/HUD/OptionsMenu.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Source/Menu/VMenu.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Assets/customisation/background.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Graphics/ChooseMap/Star.png" type="Texture" id=24]
+[ext_resource path="res://Assets/customisation/create-lobby-button.png" type="Texture" id=25]
+[ext_resource path="res://Assets/customisation/switch.png" type="Texture" id=26]
+[ext_resource path="res://Assets/customisation/switch-plug.png" type="Texture" id=27]
+[ext_resource path="res://Assets/customisation/Game-name-panel.png" type="Texture" id=28]
+[ext_resource path="res://Assets/customisation/Fără titlu4.png" type="Texture" id=29]
+[ext_resource path="res://Assets/customisation/players-icon.png" type="Texture" id=30]
+[ext_resource path="res://Assets/customisation/bet-info-panel.png" type="Texture" id=31]
+[ext_resource path="res://Source/Gameplay/HUD/LobbySearchInstanceWjoin.tscn" type="PackedScene" id=32]
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 45
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 22
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 26
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+use_filter = true
+extra_spacing_bottom = 7
+extra_spacing_char = -1
+font_data = ExtResource( 15 )
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/UpButton.png-51173f0e3961b148e992d0b79ddd0b73.stex"
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends TextureButton
+
+class_name SmartTextureButton
+
+onready var pressed_audio = $Pressed
+onready var focused_audio = $Focused
+
+func button_pressed():
+	if GamePlay.interface_sound:
+		pressed_audio.play()
+
+func focus_entered():
+	pass
+	#focused_audio.play()
+"
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends TextureButton
+
+class_name SmartTextureButton
+
+onready var pressed_audio = $Pressed
+onready var focused_audio = $Focused
+
+func button_pressed():
+	if GamePlay.interface_sound:
+		pressed_audio.play()
+
+func focus_entered():
+	pass
+	#focused_audio.play()
+"
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends TextureButton
+
+class_name SmartTextureButton
+
+onready var pressed_audio = $Pressed
+onready var focused_audio = $Focused
+
+func button_pressed():
+	if GamePlay.interface_sound:
+		pressed_audio.play()
+
+func focus_entered():
+	pass
+	#focused_audio.play()
+"
+
+[sub_resource type="DynamicFont" id=12]
+size = 36
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 800, 500 )
+modulate_color = Color( 0.517647, 0.517647, 0.517647, 1 )
+
+[sub_resource type="Theme" id=14]
+default_font = SubResource( 12 )
+LineEdit/colors/clear_button_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/clear_button_color_pressed = Color( 1, 1, 1, 1 )
+LineEdit/colors/cursor_color = Color( 0.94, 0.94, 0.94, 1 )
+LineEdit/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color_uneditable = Color( 0.88, 0.88, 0.88, 0.5 )
+LineEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
+LineEdit/constants/minimum_spaces = 12
+LineEdit/fonts/font = SubResource( 12 )
+LineEdit/icons/clear = null
+LineEdit/styles/focus = SubResource( 13 )
+LineEdit/styles/normal = SubResource( 13 )
+LineEdit/styles/read_only = SubResource( 13 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 36
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 32
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 32
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 32
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFontData" id=25]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=26]
+size = 29
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = SubResource( 25 )
+
+[sub_resource type="DynamicFontData" id=27]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=28]
+size = 29
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = SubResource( 27 )
+
+[sub_resource type="DynamicFontData" id=29]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=30]
+size = 74
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 29 )
+
+[sub_resource type="DynamicFontData" id=31]
+font_path = "res://Assets/Fonts/minnie_2/Minnie.ttf"
+
+[sub_resource type="DynamicFont" id=32]
+size = 44
+font_data = SubResource( 31 )
+
+[node name="ChooseMap" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 11 )
+
+[node name="MapCount" type="TextureRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.439216 )
+margin_left = 1138.19
+margin_top = 313.248
+margin_right = 1260.19
+margin_bottom = 402.248
+rect_min_size = Vector2( 122, 89 )
+texture = ExtResource( 10 )
+expand = true
+
+[node name="Container" type="HBoxContainer" parent="MapCount"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 14.0
+margin_right = -3.00002
+alignment = 1
+
+[node name="Current" type="Label" parent="MapCount/Container"]
+margin_left = 17.0
+margin_top = 12.0
+margin_right = 40.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 6 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Slash" type="Label" parent="MapCount/Container"]
+margin_left = 44.0
+margin_top = 12.0
+margin_right = 67.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 20 )
+text = "/"
+align = 1
+valign = 1
+
+[node name="Total" type="Label" parent="MapCount/Container"]
+margin_left = 71.0
+margin_top = 12.0
+margin_right = 101.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 6 )
+text = "4"
+align = 1
+valign = 1
+
+[node name="MapCards" type="Control" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -441.0
+margin_top = -40.0
+margin_right = -82.0
+margin_bottom = 355.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="0" type="TextureRect" parent="MapCards"]
+anchor_right = 1.0
+margin_left = -83.0
+margin_top = 439.0
+margin_right = -83.0
+margin_bottom = 577.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="MapCards/0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -153.5
+margin_top = -22.0
+margin_right = 4.5
+margin_bottom = 29.0
+custom_fonts/font = SubResource( 21 )
+text = "Classic"
+valign = 1
+
+[node name="Subtitle" type="Label" parent="MapCards/0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -156.5
+margin_top = 15.0
+margin_right = 1.5
+margin_bottom = 66.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 22 )
+text = "Free Map Pack"
+valign = 1
+
+[node name="Live" type="Label" parent="MapCards/0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 15.5
+margin_top = -68.0
+margin_right = 173.5
+margin_bottom = -17.0
+custom_fonts/font = SubResource( 23 )
+text = "LIVE"
+align = 1
+valign = 1
+
+[node name="Star" type="TextureRect" parent="MapCards/0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 92.5
+margin_top = -10.0
+margin_right = 155.5
+margin_bottom = 50.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 24 )
+expand = true
+stretch_mode = 6
+
+[node name="1" type="TextureRect" parent="MapCards"]
+modulate = Color( 1, 1, 1, 0.470588 )
+margin_left = -82.0
+margin_top = 578.0
+margin_right = 277.0
+margin_bottom = 708.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 6
+
+[node name="Title" type="Label" parent="MapCards/1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -156.5
+margin_top = -36.0
+margin_right = 136.5
+margin_bottom = 15.0
+custom_fonts/font = SubResource( 21 )
+text = "Ancient Rome"
+valign = 1
+
+[node name="Subtitle" type="Label" parent="MapCards/1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -154.5
+margin_top = 4.0
+margin_right = 3.5
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 22 )
+text = "Comming soon!"
+valign = 1
+
+[node name="2" type="TextureRect" parent="MapCards"]
+modulate = Color( 1, 1, 1, 0.470588 )
+margin_left = -81.0
+margin_top = 700.0
+margin_right = 276.0
+margin_bottom = 829.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 6
+
+[node name="Title" type="Label" parent="MapCards/2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -153.5
+margin_top = -34.5
+margin_right = 4.5
+margin_bottom = 16.5
+custom_fonts/font = SubResource( 21 )
+text = "France"
+valign = 1
+
+[node name="Subtitle" type="Label" parent="MapCards/2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -154.5
+margin_top = 4.0
+margin_right = 3.5
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 22 )
+text = "Comming soon!"
+valign = 1
+
+[node name="3" type="TextureRect" parent="MapCards"]
+modulate = Color( 1, 1, 1, 0.470588 )
+margin_left = -81.0
+margin_top = 822.0
+margin_right = 276.0
+margin_bottom = 951.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 6
+
+[node name="Title" type="Label" parent="MapCards/3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -153.5
+margin_top = -34.5
+margin_right = 4.5
+margin_bottom = 16.5
+custom_fonts/font = SubResource( 21 )
+text = "Asia"
+valign = 1
+
+[node name="Subtitle" type="Label" parent="MapCards/3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -154.5
+margin_top = 4.0
+margin_right = 3.5
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 22 )
+text = "Comming soon!"
+valign = 1
+
+[node name="Maps" type="Control" parent="."]
+anchor_left = 0.179
+anchor_top = 0.406
+anchor_right = 0.179
+anchor_bottom = 0.406
+margin_left = 75.88
+margin_top = -28.32
+margin_right = 111.88
+margin_bottom = -4.32001
+
+[node name="0" type="VBoxContainer" parent="Maps"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 83.0
+margin_top = -146.576
+margin_right = 547.0
+margin_bottom = 267.424
+custom_constants/separation = 26
+alignment = 1
+
+[node name="Map" type="TextureRect" parent="Maps/0"]
+margin_right = 464.0
+margin_bottom = 414.0
+grow_horizontal = 2
+rect_min_size = Vector2( 333, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="1" type="VBoxContainer" parent="Maps"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 81.0
+margin_top = 224.0
+margin_right = 547.0
+margin_bottom = 631.0
+custom_constants/separation = 26
+alignment = 1
+
+[node name="Map" type="TextureRect" parent="Maps/1"]
+margin_right = 466.0
+margin_bottom = 351.0
+grow_horizontal = 2
+rect_min_size = Vector2( 333, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Tagline" type="Label" parent="Maps/1"]
+margin_top = 377.0
+margin_right = 466.0
+margin_bottom = 407.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 7 )
+align = 1
+valign = 1
+
+[node name="2" type="VBoxContainer" parent="Maps"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 81.0
+margin_top = 632.0
+margin_right = 547.0
+margin_bottom = 1039.0
+custom_constants/separation = 26
+alignment = 1
+
+[node name="Map" type="TextureRect" parent="Maps/2"]
+margin_right = 466.0
+margin_bottom = 351.0
+grow_horizontal = 2
+rect_min_size = Vector2( 333, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Tagline" type="Label" parent="Maps/2"]
+margin_top = 377.0
+margin_right = 466.0
+margin_bottom = 407.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 7 )
+align = 1
+valign = 1
+
+[node name="3" type="VBoxContainer" parent="Maps"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 81.0
+margin_top = 1040.0
+margin_right = 547.0
+margin_bottom = 1447.0
+custom_constants/separation = 26
+alignment = 1
+
+[node name="Map" type="TextureRect" parent="Maps/3"]
+margin_right = 466.0
+margin_bottom = 351.0
+grow_horizontal = 2
+rect_min_size = Vector2( 333, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Tagline" type="Label" parent="Maps/3"]
+margin_top = 377.0
+margin_right = 466.0
+margin_bottom = 407.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 7 )
+align = 1
+valign = 1
+
+[node name="UpButton" parent="." instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -111.0
+margin_top = 259.0
+margin_right = -56.0
+margin_bottom = 301.0
+rect_min_size = Vector2( 55, 42 )
+texture_normal = SubResource( 2 )
+script = SubResource( 3 )
+
+[node name="DownButton" parent="." instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -111.0
+margin_top = 420.0
+margin_right = -56.0
+margin_bottom = 462.0
+rect_min_size = Vector2( 55, 42 )
+texture_normal = ExtResource( 6 )
+script = SubResource( 4 )
+
+[node name="NextButton" parent="." instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -286.0
+margin_top = 608.0
+margin_right = -33.0
+margin_bottom = 700.0
+rect_min_size = Vector2( 253, 92 )
+texture_normal = ExtResource( 9 )
+script = SubResource( 5 )
+
+[node name="BackButton" parent="." instance=ExtResource( 2 )]
+margin_top = 44.0
+margin_right = 147.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 147, 81 )
+texture_normal = ExtResource( 4 )
+
+[node name="Tournment" parent="." instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -138.0
+margin_top = 33.0
+margin_right = -31.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 107, 107 )
+texture_normal = ExtResource( 3 )
+
+[node name="Overlay" type="CanvasLayer" parent="."]
+
+[node name="StartGameOverlay" type="ColorRect" parent="Overlay"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.686275 )
+
+[node name="StartGameMenu" parent="Overlay/StartGameOverlay" instance=ExtResource( 16 )]
+
+[node name="OptionsOverlay" type="ColorRect" parent="Overlay"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.686275 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsMenu" parent="Overlay/OptionsOverlay" instance=ExtResource( 21 )]
+
+[node name="OfflineOverlay" type="ColorRect" parent="Overlay"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.25098 )
+
+[node name="Container" type="TextureRect" parent="Overlay/OfflineOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = -126.0
+margin_right = 240.0
+margin_bottom = 126.0
+rect_min_size = Vector2( 480, 252 )
+theme = SubResource( 14 )
+texture = ExtResource( 18 )
+expand = true
+
+[node name="Info" type="VBoxContainer" parent="Overlay/OfflineOverlay/Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -226.0
+rect_min_size = Vector2( 260, 252 )
+
+[node name="MarginTop" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_right = 480.0
+margin_bottom = 5.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 9.0
+margin_right = 480.0
+margin_bottom = 58.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 15 )
+text = "Offline Game"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginMid1" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 62.0
+margin_right = 480.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Info" type="Label" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 71.0
+margin_right = 480.0
+margin_bottom = 108.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 16 )
+text = "Number of players? *"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginMid2" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 112.0
+margin_right = 480.0
+margin_bottom = 117.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="PlayersRange" type="SpinBox" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 121.0
+margin_right = 480.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 0, 49 )
+min_value = 2.0
+max_value = 6.0
+value = 2.0
+align = 1
+
+[node name="MarginMid3" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 174.0
+margin_right = 480.0
+margin_bottom = 179.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="HMenu" parent="Overlay/OfflineOverlay/Container/Info" instance=ExtResource( 19 )]
+margin_top = 183.0
+margin_right = 480.0
+margin_bottom = 243.0
+size_flags_vertical = 3
+
+[node name="MarginLeft" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
+margin_top = 11.0
+margin_bottom = 48.0
+
+[node name="Cancel" parent="Overlay/OfflineOverlay/Container/Info/HMenu" instance=ExtResource( 20 )]
+margin_left = 20.0
+margin_right = 220.0
+custom_fonts/font = SubResource( 17 )
+text = "Cancel"
+flat = true
+
+[node name="MarginMid" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
+margin_left = 240.0
+margin_top = 11.0
+margin_right = 240.0
+margin_bottom = 48.0
+
+[node name="Create" parent="Overlay/OfflineOverlay/Container/Info/HMenu" instance=ExtResource( 20 )]
+margin_left = 260.0
+margin_right = 460.0
+custom_fonts/font = SubResource( 17 )
+text = "Create"
+flat = true
+
+[node name="MarginRight" type="Label" parent="Overlay/OfflineOverlay/Container/Info/HMenu"]
+margin_left = 480.0
+margin_top = 11.0
+margin_right = 480.0
+margin_bottom = 48.0
+
+[node name="MarginBottom" type="ColorRect" parent="Overlay/OfflineOverlay/Container/Info"]
+margin_top = 247.0
+margin_right = 480.0
+margin_bottom = 252.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="QuitConfirm" type="ColorRect" parent="Overlay"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.686275 )
+
+[node name="ColorRect" type="TextureRect" parent="Overlay/QuitConfirm"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -210.0
+margin_top = -140.0
+margin_right = 210.0
+margin_bottom = 189.0
+texture = ExtResource( 18 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Overlay/QuitConfirm/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VMenu" parent="Overlay/QuitConfirm/ColorRect/MarginContainer" instance=ExtResource( 22 )]
+margin_right = 420.0
+margin_bottom = 329.0
+
+[node name="MarginTop" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_right = 420.0
+margin_bottom = 5.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 25.0
+margin_right = 420.0
+margin_bottom = 88.0
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 18 )
+text = "Quit Game?"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginMid1" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 108.0
+margin_right = 420.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="quit_confirm" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" instance=ExtResource( 20 )]
+margin_top = 133.0
+margin_right = 420.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 19 )
+text = "Yes"
+flat = true
+
+[node name="MarginMid2" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 216.0
+margin_right = 420.0
+margin_bottom = 221.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="quit_cancel" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu" instance=ExtResource( 20 )]
+margin_top = 241.0
+margin_right = 420.0
+margin_bottom = 304.0
+custom_fonts/font = SubResource( 19 )
+text = "No"
+flat = true
+
+[node name="MarginBottom" type="ColorRect" parent="Overlay/QuitConfirm/ColorRect/MarginContainer/VMenu"]
+margin_top = 324.0
+margin_right = 420.0
+margin_bottom = 329.0
+rect_min_size = Vector2( 0, 5 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Background2" type="Sprite" parent="."]
+position = Vector2( 633, 411 )
+scale = Vector2( 0.53875, 0.471111 )
+z_index = -14
+texture = ExtResource( 23 )
+
+[node name="Button" type="Button" parent="Background2"]
+show_behind_parent = true
+margin_left = 349.0
+margin_top = 469.0
+margin_right = 596.0
+margin_bottom = 586.0
+
+[node name="Button2" type="Button" parent="Background2"]
+show_behind_parent = true
+margin_left = 106.0
+margin_top = 467.0
+margin_right = 331.0
+margin_bottom = 588.0
+
+[node name="Header" type="Sprite" parent="."]
+position = Vector2( 634, 49 )
+scale = Vector2( 0.676471, 0.768924 )
+z_index = -8
+texture = ExtResource( 5 )
+
+[node name="Switch" type="Sprite" parent="."]
+position = Vector2( 824.5, 661 )
+scale = Vector2( 0.485251, 0.477273 )
+texture = ExtResource( 26 )
+
+[node name="Switch-plug" type="Sprite" parent="."]
+position = Vector2( 755.178, 659 )
+scale = Vector2( 0.329406, 0.318919 )
+texture = ExtResource( 27 )
+
+[node name="Switch-plug2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 887, 659 )
+scale = Vector2( 0.329406, 0.318919 )
+texture = ExtResource( 27 )
+
+[node name="Create-lobby-button" type="Sprite" parent="."]
+position = Vector2( 100, 645.875 )
+scale = Vector2( 0.330855, 0.330092 )
+z_index = 140
+texture = ExtResource( 25 )
+
+[node name="HostJoin" parent="." instance=ExtResource( 19 )]
+margin_left = 46.651
+margin_top = 604.689
+margin_right = 153.387
+margin_bottom = 833.305
+size_flags_vertical = 0
+
+[node name="Create" parent="HostJoin" instance=ExtResource( 20 )]
+show_behind_parent = true
+margin_right = 106.0
+margin_bottom = 84.799
+rect_min_size = Vector2( 94.101, 84.799 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 24 )
+text = ""
+flat = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 705.0
+margin_top = 644.0
+margin_right = 914.0
+margin_bottom = 722.0
+custom_fonts/font = SubResource( 26 )
+text = "Private"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 843.0
+margin_top = 645.0
+margin_right = 999.0
+margin_bottom = 703.0
+custom_fonts/font = SubResource( 28 )
+text = "Public"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 418.749
+margin_top = 19.885
+margin_right = 856.749
+margin_bottom = 94.885
+custom_fonts/font = SubResource( 30 )
+text = "Play Conflict"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 570.016
+margin_top = 128.858
+margin_right = 1008.02
+margin_bottom = 203.858
+custom_fonts/font = SubResource( 32 )
+text = "Classic"
+
+[node name="Bet-info-panel" type="Sprite" parent="."]
+position = Vector2( 629, 553 )
+scale = Vector2( 0.666667, 0.688 )
+texture = ExtResource( 31 )
+
+[node name="Players-panel" type="Sprite" parent="."]
+position = Vector2( 629.298, 403.599 )
+scale = Vector2( 0.595989, 0.558668 )
+texture = ExtResource( 1 )
+
+[node name="Game-name-panel" type="Sprite" parent="."]
+position = Vector2( 633.5, 452 )
+scale = Vector2( 0.685374, 0.707071 )
+texture = ExtResource( 28 )
+
+[node name="Background" type="TextureRect" parent="."]
+visible = false
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -6.035
+margin_top = -2.0
+margin_right = -4.0343
+margin_bottom = 5.0
+texture = ExtResource( 29 )
+expand = true
+
+[node name="Players-icon" type="Sprite" parent="."]
+position = Vector2( 597.842, 395.5 )
+scale = Vector2( 0.683616, 0.732877 )
+texture = ExtResource( 30 )
+
+[node name="search_spawner" type="Control" parent="."]
+margin_left = 569.0
+margin_top = 367.0
+margin_right = 610.0
+margin_bottom = 407.0
+
+[node name="search_spawner2" type="Control" parent="."]
+margin_left = 71.0
+margin_top = 418.0
+margin_right = 112.0
+margin_bottom = 458.0
+
+[node name="LobbySearchInstance" parent="." instance=ExtResource( 32 )]
+show_behind_parent = true
+margin_left = 1064.0
+margin_top = 622.0
+margin_right = 2263.0
+margin_bottom = 707.0
+
+[connection signal="pressed" from="UpButton" to="." method="pressed_up"]
+[connection signal="pressed" from="DownButton" to="." method="pressed_down"]
+[connection signal="pressed" from="NextButton" to="." method="next"]
+[connection signal="pressed" from="BackButton" to="." method="go_back"]
+[connection signal="pressed" from="Background2/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Background2/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="HostJoin/Create" to="." method="_on_Create_pressed"]
+
+[editable path="Overlay/OfflineOverlay/Container/Info/HMenu/Cancel"]

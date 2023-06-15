@@ -4,9 +4,7 @@
 [ext_resource path="res://Assets/Graphics/Map/Countries/Argentina.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Graphics/Map/Borders/Argentina.png" type="Texture" id=3]
 
-[node name="Argentina" groups=[
-"SouthAmerica",
-] instance=ExtResource( 1 )]
+[node name="Argentina" groups=["SouthAmerica"] instance=ExtResource( 1 )]
 
 [node name="Country" parent="." index="0"]
 texture = ExtResource( 2 )

@@ -1,5 +1,13 @@
 extends Node
 
+
+var color_active = 0
+var frame_active = 2
+var avatar_actve = 0
+var dice_active = 0
+
+
+
 var players = 3
 var colors = {
 	"1": Color.orange,

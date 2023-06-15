@@ -66,7 +66,7 @@ func change_state(state, net_call=false):
 	var previous_state = country_state
 	previous_state.exit(self)
 	country_state = state
-	#print(state.get_class())
+	print(state.get_class())
 	country_state.enter(self)
 	previous_state.queue_free()
 	if net_call:
@@ -97,7 +97,7 @@ func _on_mouse_entered():
 		if Server.my_lobby.players[int(GamePlay.game.active_player.name)].id != Server.player_id:
 			return
 	hovering = true
-
+ 
 func _on_mouse_exited():
 	if GamePlay.online and GamePlay.game.active_player:
 		if Server.my_lobby.players[int(GamePlay.game.active_player.name)].id != Server.player_id:

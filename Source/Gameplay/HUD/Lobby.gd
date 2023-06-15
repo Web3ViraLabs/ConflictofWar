@@ -1,16 +1,16 @@
 extends Control
 
-onready var name_label = $TextureRect/Info/NameLabel
-onready var code_label = $TextureRect/Info/Window/Details/Code/CodeLabel
-onready var players_label = $TextureRect/Info/Window/Details/Players/PlayersLabel
-onready var pass_label = $TextureRect/Info/Window/Details/Pass/PassLabel
+onready var name_label = $NameLabel
+onready var code_label = $CodeLabel
+onready var players_label = $PlayersLabel
+onready var pass_label = $Betlabel
 onready var players_list = $TextureRect/Info/Window/PlayersList
-onready var start_button = $TextureRect/Info/HMenu3/StartGame
-onready var start_margin = $TextureRect/Info/HMenu3/MarginRight
-onready var chat = $TextureRect/Info/Window/Chat/ChatBox/Chat
-onready var chat_box = $TextureRect/Info/Window/Chat/ChatBox
-onready var chat_scroll = $TextureRect/Info/Window/Chat/ChatBox.get_v_scrollbar()
-onready var message_edit = $TextureRect/Info/Window/Chat/MessageBox/Message
+onready var start_button = $StartGame
+#onready var start_margin = $TextureRect/Info/HMenu3/MarginRight
+onready var chat = $ChatBox/Chat
+onready var chat_box = $ChatBox
+onready var chat_scroll = $ChatBox.get_v_scrollbar()
+onready var message_edit = $Message
 
 var player_instance_scene = preload("res://Source/Gameplay/HUD/PlayerListInstance.tscn")
 var message_instance_scene = preload("res://Source/Gameplay/HUD/MessageInstance.tscn")
@@ -58,11 +58,11 @@ func instance_player_list():
 		if Server.my_lobby.players[i]["host"]:
 			player_instance.kick_button.hide()
 			start_button.show()
-			start_margin.show()
+			#start_margin.show()
 		if !Server.my_lobby.players[Server.player_id]["host"]:
 			player_instance.kick_button.hide()
 			start_button.hide()
-			start_margin.hide()
+			#start_margin.hide()
 		if Server.my_lobby.players[i].id == Server.player_id:
 			player_instance.name_label.set("custom_colors/font_color", Color.orangered)
 			Server.player_number = i

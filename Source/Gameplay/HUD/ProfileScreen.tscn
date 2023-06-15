@@ -1,0 +1,1218 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Demo_2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/TransperentBackground.png" type="Texture" id=2]
+[ext_resource path="res://Source/Gameplay/HUD/ProfileScreen.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Fonts/minnie_2/Minnie.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/EditButton.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Color.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Avatar.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/LevelIcon.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Demo_1.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Demo_3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/TotalIcon.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/RankIcon.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Background.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/LostIcon.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/WinIcon.png" type="Texture" id=15]
+[ext_resource path="res://addons/SmoothScroll/SmoothScrollContainer.gd" type="Script" id=16]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/AssetsPanel.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Fonts/Play/Play-Regular.ttf" type="DynamicFontData" id=18]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Frame.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/NFT.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/DiceSkin.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Badge.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Dice_4.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Dice_2.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Dice_5.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Dice_6.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Dice_3.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/MaskTexture.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/Leaderboard.png" type="Texture" id=29]
+[ext_resource path="res://Source/TextureButton/SmartTextureButton.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Assets/Graphics/ProfileScreen/BackButton.png" type="Texture" id=31]
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="Theme" id=17]
+VScrollBar/styles/grabber = SubResource( 12 )
+VScrollBar/styles/grabber_highlight = SubResource( 13 )
+VScrollBar/styles/grabber_pressed = SubResource( 14 )
+VScrollBar/styles/scroll = SubResource( 15 )
+VScrollBar/styles/scroll_focus = SubResource( 16 )
+
+[sub_resource type="Shader" id=25]
+code = "shader_type canvas_item;
+
+uniform sampler2D mask_texture;
+
+void fragment()
+{
+	vec4 color = texture(TEXTURE, UV);
+	color.a *= texture(mask_texture, UV).a;
+	COLOR = color;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=26]
+shader = SubResource( 25 )
+shader_param/mask_texture = ExtResource( 28 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 53
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 23
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 33
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 23
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 33
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 23
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 33
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 23
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 33
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 19
+use_filter = true
+font_data = ExtResource( 18 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 22
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 40
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.984314, 0.517647, 0.109804, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0, 0, 0, 0.352941 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StreamTexture" id=24]
+flags = 4
+load_path = "res://.import/Dice_1.png-66737fbc7d5c69db00bf1f6a420fc266.stex"
+
+[sub_resource type="DynamicFont" id=21]
+size = 37
+outline_size = 1
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="ProfileScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 480, 213 )
+script = ExtResource( 3 )
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 13 )
+expand = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+theme = SubResource( 17 )
+scroll_horizontal_enabled = false
+script = ExtResource( 16 )
+
+[node name="ScrollItems" type="Control" parent="ScrollContainer"]
+margin_right = 1280.0
+margin_bottom = 1898.0
+rect_min_size = Vector2( 1280, 1898 )
+
+[node name="Demo1" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 5
+
+[node name="Demo2" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 458.0
+margin_bottom = 458.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="Demo3" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1178.0
+margin_bottom = 1178.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+
+[node name="Panel" type="NinePatchRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -356.0
+margin_top = 82.0
+margin_right = 357.0
+margin_bottom = 473.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 2 )
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 40
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Panel" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = 0.250977
+margin_top = -0.114002
+margin_right = 0.250977
+margin_bottom = -0.114
+rect_min_size = Vector2( 88, 88 )
+texture_normal = ExtResource( 5 )
+
+[node name="AvatarContainer" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel"]
+anchor_left = 0.142
+anchor_top = 0.465
+anchor_right = 0.142
+anchor_bottom = 0.465
+margin_left = -230.246
+margin_top = -229.815
+margin_right = 229.754
+margin_bottom = 230.185
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Avatar" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/AvatarContainer"]
+material = SubResource( 26 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -131.0
+margin_top = -134.0
+margin_right = 134.0
+margin_bottom = 131.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Panel"]
+anchor_left = 0.595
+anchor_top = 0.15
+anchor_right = 0.595
+anchor_bottom = 0.15
+margin_left = -155.235
+margin_top = -27.15
+margin_right = 154.765
+margin_bottom = 26.85
+grow_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Don Pharaoh"
+valign = 1
+
+[node name="Info" type="VBoxContainer" parent="ScrollContainer/ScrollItems/Panel"]
+anchor_left = 0.4
+anchor_top = 0.286
+anchor_right = 0.4
+anchor_bottom = 0.286
+margin_left = -0.200012
+margin_top = 0.173996
+margin_right = 394.8
+margin_bottom = 240.174
+custom_constants/separation = 15
+
+[node name="Level" type="HBoxContainer" parent="ScrollContainer/ScrollItems/Panel/Info"]
+margin_right = 395.0
+margin_bottom = 34.0
+custom_constants/separation = 7
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/Info/Level"]
+margin_right = 32.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/Level"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 104.0
+margin_bottom = 29.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 2 )
+text = "Level:"
+valign = 1
+
+[node name="Value" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/Level"]
+margin_left = 111.0
+margin_right = 131.0
+margin_bottom = 34.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 3 )
+text = "4"
+valign = 1
+
+[node name="TotalMatches" type="HBoxContainer" parent="ScrollContainer/ScrollItems/Panel/Info"]
+margin_top = 49.0
+margin_right = 395.0
+margin_bottom = 83.0
+custom_constants/separation = 7
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/Info/TotalMatches"]
+margin_right = 32.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/TotalMatches"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 278.0
+margin_bottom = 29.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 5 )
+text = "Total Matches Played:"
+valign = 1
+
+[node name="Value" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/TotalMatches"]
+margin_left = 285.0
+margin_right = 341.0
+margin_bottom = 34.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 6 )
+text = "145"
+valign = 1
+
+[node name="WonMatches" type="HBoxContainer" parent="ScrollContainer/ScrollItems/Panel/Info"]
+margin_top = 98.0
+margin_right = 395.0
+margin_bottom = 132.0
+custom_constants/separation = 7
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/Info/WonMatches"]
+margin_right = 32.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/WonMatches"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 190.0
+margin_bottom = 29.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 8 )
+text = "Won Matches:"
+valign = 1
+
+[node name="Value" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/WonMatches"]
+margin_left = 197.0
+margin_right = 235.0
+margin_bottom = 34.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 9 )
+text = "22"
+valign = 1
+
+[node name="LostMatches" type="HBoxContainer" parent="ScrollContainer/ScrollItems/Panel/Info"]
+margin_top = 147.0
+margin_right = 395.0
+margin_bottom = 181.0
+custom_constants/separation = 7
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/Info/LostMatches"]
+margin_right = 32.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/LostMatches"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 192.0
+margin_bottom = 29.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 10 )
+text = "Lost Matches:"
+valign = 1
+
+[node name="Value" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/LostMatches"]
+margin_left = 199.0
+margin_right = 248.0
+margin_bottom = 34.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 11 )
+text = "117"
+valign = 1
+
+[node name="Rank" type="HBoxContainer" parent="ScrollContainer/ScrollItems/Panel/Info"]
+margin_top = 196.0
+margin_right = 395.0
+margin_bottom = 230.0
+custom_constants/separation = 7
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/Panel/Info/Rank"]
+margin_right = 32.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/Rank"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 96.0
+margin_bottom = 29.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 10 )
+text = "Rank:"
+valign = 1
+
+[node name="Value" type="Label" parent="ScrollContainer/ScrollItems/Panel/Info/Rank"]
+margin_left = 103.0
+margin_right = 143.0
+margin_bottom = 34.0
+grow_vertical = 2
+custom_fonts/font = SubResource( 11 )
+text = "56"
+valign = 1
+
+[node name="Avatar" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = -366.0
+margin_top = -0.194031
+margin_right = -128.0
+margin_bottom = 331.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Avatar"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Avatar"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Avatar"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Don Pharaoh"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Avatar"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Avatar" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="Frame" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = -119.0
+margin_top = -0.194031
+margin_right = 119.0
+margin_bottom = 331.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Frame"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Frame"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Frame"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Standard"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Frame"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 19 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Frame" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="Color" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = 128.0
+margin_top = -0.194031
+margin_right = 366.0
+margin_bottom = 331.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Color"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Color"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Color"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Purple"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Color"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Color" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="Dice" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = -366.0
+margin_top = 358.806
+margin_right = -128.0
+margin_bottom = 690.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Dice"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Dice"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Dice"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Classic"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Dice"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 21 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Dice" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="Troop" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = -119.0
+margin_top = 358.806
+margin_right = 119.0
+margin_bottom = 690.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Troop"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Troop"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Troop"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Conflict of war 1146"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Troop"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 20 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Troop" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="Badges" type="TextureRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_top = 0.253
+anchor_right = 0.5
+anchor_bottom = 0.253
+margin_left = 128.0
+margin_top = 358.806
+margin_right = 366.0
+margin_bottom = 690.806
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 238, 332 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="Label" parent="ScrollContainer/ScrollItems/Badges"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -29.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 18 )
+text = "Badges"
+align = 1
+valign = 1
+
+[node name="Name" type="Label" parent="ScrollContainer/ScrollItems/Badges"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -47.5
+margin_top = 52.0
+margin_right = 47.5
+margin_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 19 )
+text = "Comming soon"
+align = 1
+valign = 1
+
+[node name="Thumb" type="TextureRect" parent="ScrollContainer/ScrollItems/Badges"]
+anchor_left = 0.515
+anchor_top = 0.602
+anchor_right = 0.515
+anchor_bottom = 0.602
+margin_left = -102.57
+margin_top = -95.864
+margin_right = 95.43
+margin_bottom = 96.136
+texture = ExtResource( 22 )
+expand = true
+stretch_mode = 6
+
+[node name="EditButton" parent="ScrollContainer/ScrollItems/Badges" instance=ExtResource( 30 )]
+anchor_left = 0.973
+anchor_top = 0.054
+anchor_right = 0.973
+anchor_bottom = 0.054
+margin_left = -31.574
+margin_top = 62.072
+margin_right = 10.426
+margin_bottom = 104.072
+rect_min_size = Vector2( 42, 42 )
+texture_normal = ExtResource( 5 )
+
+[node name="DiceRolls" type="NinePatchRect" parent="ScrollContainer/ScrollItems"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -369.0
+margin_top = 1201.0
+margin_right = 354.0
+margin_bottom = 1898.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 2 )
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 40
+
+[node name="Title" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls"]
+anchor_left = 0.511
+anchor_top = 0.067
+anchor_right = 0.511
+anchor_bottom = 0.067
+margin_left = -88.453
+margin_top = -19.699
+margin_right = 88.547
+margin_bottom = 20.301
+grow_vertical = 2
+custom_fonts/font = SubResource( 20 )
+text = "Dice Rolls"
+valign = 1
+
+[node name="Info" type="VBoxContainer" parent="ScrollContainer/ScrollItems/DiceRolls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 72.0
+margin_top = 94.0
+margin_right = -47.0
+margin_bottom = -38.0
+rect_min_size = Vector2( 604, 564 )
+custom_constants/separation = 29
+
+[node name="1" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_right = 604.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/1"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = SubResource( 24 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/1"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="2" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_top = 99.0
+margin_right = 604.0
+margin_bottom = 169.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/2"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = ExtResource( 24 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="3" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_top = 198.0
+margin_right = 604.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/3"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = ExtResource( 27 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/3"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="4" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_top = 297.0
+margin_right = 604.0
+margin_bottom = 367.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/4"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = ExtResource( 23 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/4"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="5" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_top = 396.0
+margin_right = 604.0
+margin_bottom = 466.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/5"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/5"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = ExtResource( 25 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/5"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="6" type="Control" parent="ScrollContainer/ScrollItems/DiceRolls/Info"]
+margin_top = 495.0
+margin_right = 604.0
+margin_bottom = 565.0
+rect_min_size = Vector2( 604, 70 )
+
+[node name="Progress" type="ProgressBar" parent="ScrollContainer/ScrollItems/DiceRolls/Info/6"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.0
+margin_top = -18.0
+margin_right = 285.0
+margin_bottom = 18.0
+custom_styles/fg = SubResource( 22 )
+custom_styles/bg = SubResource( 23 )
+value = 50.0
+percent_visible = false
+
+[node name="Icon" type="TextureRect" parent="ScrollContainer/ScrollItems/DiceRolls/Info/6"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -3.0
+margin_top = -40.0
+margin_right = 72.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 72, 72 )
+texture = ExtResource( 26 )
+expand = true
+stretch_mode = 6
+
+[node name="Percent" type="Label" parent="ScrollContainer/ScrollItems/DiceRolls/Info/6"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -17.0
+margin_right = -26.0
+margin_bottom = 21.0
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "19"
+align = 2
+valign = 1
+
+[node name="Leaderboard" parent="." instance=ExtResource( 30 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -146.0
+margin_top = 601.0
+margin_right = -39.0
+margin_bottom = 708.0
+rect_min_size = Vector2( 107, 107 )
+texture_normal = ExtResource( 29 )
+
+[node name="BackButton" parent="." instance=ExtResource( 30 )]
+margin_left = -1.0
+margin_top = 26.0
+margin_right = 159.0
+margin_bottom = 115.0
+rect_min_size = Vector2( 147, 81 )
+texture_normal = ExtResource( 31 )
+
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Panel/EditButton" to="." method="edit_profile"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Avatar/EditButton" to="." method="edit_avatar"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Frame/EditButton" to="." method="edit_frame"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Color/EditButton" to="." method="edit_color"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Dice/EditButton" to="." method="edit_dice"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Troop/EditButton" to="." method="edit_troop"]
+[connection signal="pressed" from="ScrollContainer/ScrollItems/Badges/EditButton" to="." method="edit_badges"]
+[connection signal="pressed" from="Leaderboard" to="." method="leaderboard"]
+[connection signal="pressed" from="BackButton" to="." method="go_back"]

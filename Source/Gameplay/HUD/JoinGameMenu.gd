@@ -1,6 +1,8 @@
 extends Control
 
 var lobby_search_scene = preload("res://Source/Gameplay/HUD/LobbySearchInstance.tscn")
+var ins = preload("res://Source/Gameplay/HUD/LobbySearchInstance.tscn")
+
 
 onready var lobbies_list = $TextureRect/Info/LobbiesContainer/Lobbies
 onready var back_button = $Overlay/JoinCodeMenu/Background/Info/HMenu3/Cancel
@@ -12,7 +14,7 @@ onready var error_label = $Overlay/Error
 func _ready():
 	error_label.hide()
 	join_code_menu.hide()
-	join_code_menu.connect("joining_lobby", self, "joining_lobby")
+	#join_code_menu.connect("joining_lobby", self, "joining_lobby")
 	Server.connect("got_active_lobbies_signal", self, "got_active_lobbies")
 	Server.connect("failed_to_join_lobby_signal", self, "failed_to_join_lobby")
 	Server.connect("lobby_updated_signal", self, "joined_lobby")
@@ -32,13 +34,13 @@ func got_active_lobbies(lobbies):
 	instance_lobby_search_scenes(lobbies)
 
 func instance_lobby_search_scenes(lobbies: Dictionary):
-	for child in lobbies_list.get_children():
+	for child in .get_children():
 		if child is LobbySearchInstance:
 			child.queue_free()
 	for lobby_code in lobbies.keys():
 		var lobby_instance = lobby_search_scene.instance()
 		lobby_instance.set_name(str(lobbies[lobby_code]))
-		lobbies_list.add_child(lobby_instance)
+		$search_spawner.add_child(lobby_instance)
 		lobby_instance.connect("joining", self, "joining_lobby")
 		lobby_instance.code_label.text = str(lobbies[lobby_code].code)
 		lobby_instance.name_label.text = " " + str(lobbies[lobby_code].name)

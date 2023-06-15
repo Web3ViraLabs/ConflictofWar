@@ -1,25 +1,29 @@
-# Conquest
+# Conflict of War
 
-### [Live Demo](http://conquestgame.online)
+### [Live Demo - Previous Version](http://conquestgame.online)
 
-Conquest is an open source strategy game similar to Risk and written in Godot.
+Conflict of War is an Solana based Web3 strategy game similar to Risk and written in Godot.
 
 # Online
 To play: install and run [Godot](https://godotengine.org/download), download the project code from GitHub, and import and run from Godot. 
 
-There is a public multiplayer server running at `conquestgame.online`.
+#Run the Project:
 
-![Conquest](Images/SomePlaced.PNG)
-![Conquest](Images/MainMenu.png)
-![Conquest](Images/Lobby.png)
-![Conquest](Images/AllPlaced.PNG)
+To run the Project, Clone both
+- [C.O.W Client](https://github.com/Web3ViraLabs/ConflictofWar)
+- [C.O.W Server](https://github.com/Web3ViraLabs/ConflictofWar-server)
+
+run the [Server](https://github.com/Web3ViraLabs/ConflictofWars) server download the PCK release file and [run with a Godot server](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html).
+
+and Once the Server is Live, Run the [Compiled release of Client](https://github.com/Web3ViraLabs/ConflictofWar) 
+Game would run in localhost:8080 on a Browser
 
 # Links
-- [Server code and documentation](https://github.com/argosopentech/Conquest-server)
-- Videos ([Gameplay](https://www.youtube.com/watch?v=zNjZFWyaR-M), [Multiplayer](https://www.youtube.com/watch?v=PQDjDbVymX0))
+- [Server Repository](https://github.com/Web3ViraLabs/ConflictofWar-server)
+- Videos Previous Version ([Gameplay](https://www.youtube.com/watch?v=zNjZFWyaR-M), [Multiplayer](https://www.youtube.com/watch?v=PQDjDbVymX0))
 
 # About
-Developed by [Wamiq Ur Rehman](https://wamiqurrehman.wordpress.com/) for [Argos Open Tech](https://www.argosopentech.com).
+Developed by [ViraLabs](https://viralabs.xyz/) for Conflict of War.
 
-# License
-Licensed under either the MIT license or CC0, [donations](https://github.com/sponsors/argosopentech) appreciated.
+# Agreement
+Developed under MUA (Mutual Understanding Agreement) from Conflict of War and [ViraLabs](https://viralabs.xyz/).
