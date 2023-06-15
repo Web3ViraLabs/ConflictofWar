@@ -229,130 +229,130 @@ mouse_filter = 2
 [node name="Countries" type="Spatial" parent="."]
 
 [node name="Argentina" parent="Countries" instance=ExtResource( 56 )]
-transform = Transform( 1.02, 0, 0, 0, 1, 0, 0, 0, 1.081, -0.692, 0, 0.32 )
+transform = Transform( 1.01636, 0, 0.0912454, 0, 1, 0, -0.0860965, 0, 1.07714, -0.431653, 3.14713e-05, 0.53607 )
 
 [node name="Brazil" parent="Countries" instance=ExtResource( 8 )]
-transform = Transform( 1.136, 0, 0, 0, 1, -0.000543426, 0, 0.000488692, 1.112, -0.858, 0, 0.294 )
+transform = Transform( 1.1358, 9.10874e-06, 0.0207266, 0, 1, -0.000543426, -0.0211739, 0.000488607, 1.11181, -0.883996, -4.76837e-05, 0.364117 )
 
 [node name="Peru" parent="Countries" instance=ExtResource( 9 )]
-transform = Transform( 1.115, 0, 0, 0, 1, 0, 0, 0, 1.119, -0.999072, 0, 0.334072 )
+transform = Transform( 1.11375, 0, 0.0530438, 0, 1, 0, -0.0528542, 0, 1.11774, -0.812682, -0.000123978, 0.50152 )
 
 [node name="Venezuela" parent="Countries" instance=ExtResource( 10 )]
-transform = Transform( 1.149, 0, 0, 0, 1, 0, 0, 0, 1.112, -1.025, 0, 0.267 )
+transform = Transform( 1.14844, 0, 0.0345796, 0, 1, 0, -0.0357302, 0, 1.11146, -0.924072, -8.4877e-05, 0.383957 )
 
 [node name="CentralAmerica" parent="Countries" instance=ExtResource( 11 )]
-transform = Transform( 1.01, 0, 0, 0, 1, 0, 0, 0, 1.007, -0.879, 0, -0.428 )
+transform = Transform( 1.00987, 0, 0.015993, 0, 1, 0, -0.0160406, 0, 1.00687, -0.805751, -6.10352e-05, -0.350544 )
 
 [node name="EasternUnitedStates" parent="Countries" instance=ExtResource( 13 )]
-transform = Transform( 1.088, 0, 0, 0, 1, 0, 0, 0, 1.035, -0.817, 0, -0.23 )
+transform = Transform( 1.0879, 0, -0.0139451, 0, 1, 0, 0.0146592, 0, 1.03491, -0.988529, -3.05176e-05, -0.196887 )
 
 [node name="WesternUnitedStates" parent="Countries" instance=ExtResource( 14 )]
-transform = Transform( 1.191, 0, 0, 0, 1, 0, 0, 0, 0.927, -1.221, 0, -0.953 )
+transform = Transform( 1.19071, 0, 0.0203033, 0, 1, 0, -0.0260854, 0, 0.926778, -1.09105, -7.43866e-05, -0.854581 )
 
 [node name="Quebec" parent="Countries" instance=ExtResource( 15 )]
-transform = Transform( 1.083, 0, 0, 0, 1, 0, 0, 0, 1.104, -0.708, 0, 0.096 )
+transform = Transform( 1.08278, 0, 0.0223113, 0, 1, 0, -0.0218869, 0, 1.10377, -0.653297, -6.00815e-05, 0.173353 )
 
 [node name="NorthwestTerritory" parent="Countries" instance=ExtResource( 16 )]
-transform = Transform( 1.126, 0, 0, 0, 1, 0, 0, 0, 1, -1.208, 0, -0.794 )
+transform = Transform( 1.126, 0, 0, 0, 1, 0, 0, 0, 1, -1.23067, -6.00815e-05, -0.720065 )
 
 [node name="Alaska" parent="Countries" instance=ExtResource( 17 )]
-transform = Transform( 1.126, 0, 0, 0, 1, 0, 0, 0, 1.062, -1.481, 0, -0.259 )
+transform = Transform( 1.126, 0, 0, 0, 1, 0, 0, 0, 1.062, -1.36735, 0, -0.255822 )
 
 [node name="Alberta" parent="Countries" instance=ExtResource( 18 )]
-transform = Transform( 1.077, 0, 0, 0, 1, 0, 0, 0, 1.185, -1.181, 0, 0.718 )
+transform = Transform( 1.0768, 0, -0.0230178, 0, 1, 0, 0.02092, 0, 1.18478, -1.33199, 1.52588e-05, 0.694822 )
 
 [node name="Ontario" parent="Countries" instance=ExtResource( 19 )]
-transform = Transform( 1.298, 0, 0, 0, 1, 0, 0, 0, 1.056, -1.467, 0, -0.418 )
+transform = Transform( 1.29714, 0, 0.0384379, 0, 1, 0, -0.0472466, 0, 1.0553, -1.28288, -0.000150681, -0.223288 )
 
 [node name="NorthAfrica" parent="Countries" instance=ExtResource( 20 )]
-transform = Transform( 1.118, 0, 0, 0, 1, 0, 0, 0, 1.153, -0.963, 0, 0.479 )
+transform = Transform( 1.118, 0, 0, 0, 1, 0, 0, 0, 1.153, -1.02246, 8.96454e-05, 0.361771 )
 
 [node name="Greenland" parent="Countries" instance=ExtResource( 21 )]
-transform = Transform( 1.174, 0, 0, 0, 1, 0, 0, 0, 1.074, -1.14969, 0, -0.07534 )
+transform = Transform( 1.174, 0, 0, 0, 1, 0, 0, 0, 1.074, -1.13856, 0.00031662, -0.4731 )
 
 [node name="Egypt" parent="Countries" instance=ExtResource( 22 )]
-transform = Transform( 1.087, 0, 0, 0, 1, 0, 0, 0, 1.072, -0.727485, 0, 0.0856512 )
+transform = Transform( 1.087, 0, 0, 0, 1, 0, 0, 0, 1.072, -0.753562, 0.000104904, -0.0462424 )
 
 [node name="EastAfrica" parent="Countries" instance=ExtResource( 23 )]
-transform = Transform( 1.101, 0, 0, 0, 1, 0, 0, 0, 1.151, -0.767, 0, 0.435 )
+transform = Transform( 1.101, 0, 0, 0, 1, 0, 0, 0, 1.151, -0.828078, 6.48499e-05, 0.350338 )
 
 [node name="Congo" parent="Countries" instance=ExtResource( 24 )]
-transform = Transform( 1.11, 0, 0, 0, 1, 0, 0, 0, 1.101, -0.85919, 0, 0.304908 )
+transform = Transform( 1.11, 0, 0, 0, 1, 0, 0, 0, 1.101, -0.953647, 5.24521e-05, 0.234906 )
 
 [node name="SouthAfrica" parent="Countries" instance=ExtResource( 25 )]
-transform = Transform( 1.163, 0, 0, 0, 1, 0, 0, 0, 1.194, -1.174, 0, 0.619 )
+transform = Transform( 1.16268, 0, 0.0278179, 0, 1, 0, -0.0270956, 0, 1.19368, -1.22373, -8.96454e-05, 0.728501 )
 
 [node name="Madagascar" parent="Countries" instance=ExtResource( 26 )]
-transform = Transform( 1.37, 0, 0, 0, 1, 0, 0, 0, 1.516, -2.78628, 0, 1.20682 )
+transform = Transform( 1.37, 0, 0, 0, 1, 0, 0, 0, 1.516, -1.65286, -0.000602722, 1.9917 )
 
 [node name="WesternEurope" parent="Countries" instance=ExtResource( 28 )]
-transform = Transform( 1.121, 0, 0, 0, 1, 0, 0, 0, 1.239, -0.947207, 0, 0.929633 )
+transform = Transform( 1.121, 0, 0, 0, 1, 0, 0, 0, 1.239, -0.89185, 0.000102997, 0.801761 )
 
 [node name="GreatBritain" parent="Countries" instance=ExtResource( 27 )]
-transform = Transform( 1.115, 0, 0, 0, 1, 0, 0, 0, 1.123, -0.923381, 0, 0.267981 )
+transform = Transform( 1.115, 0, 0, 0, 1, 0, 0, 0, 1.123, -0.786576, 0.000103951, 0.14416 )
 
 [node name="Iceland" parent="Countries" instance=ExtResource( 29 )]
-transform = Transform( 1.114, 0, 0, 0, 1, 0, 0, 0, 1.072, -0.875816, 0, -0.130446 )
+transform = Transform( 1.114, 0, 0, 0, 1, 0, 0, 0, 1.072, -0.658918, 0.000154495, -0.313812 )
 
 [node name="NorthernEurope" parent="Countries" instance=ExtResource( 30 )]
-transform = Transform( 1.143, 0, 0, 0, 1, 0, 0, 0, 1.177, -1.063, 0, 0.635 )
+transform = Transform( 1.143, 0, 0, 0, 1, 0, 0, 0, 1.177, -0.931924, 0.000157356, 0.438835 )
 
 [node name="SouthernEurope" parent="Countries" instance=ExtResource( 31 )]
-transform = Transform( 1.073, 0, 0, 0, 1, 0, 0, 0, 1.047, -0.63, 0, -0.079 )
+transform = Transform( 1.07245, 0, -0.0333802, 0, 1, 0, 0.0342091, 0, 1.04647, -0.687651, 0.000339508, -0.513617 )
 
 [node name="Ukraine" parent="Countries" instance=ExtResource( 32 )]
-transform = Transform( 1.12, 0, 0, 0, 1, 0, 0, 0, 1.152, -0.872087, 0, 0.48406 )
+transform = Transform( 1.11462, 0, -0.112776, 0, 1, 0, 0.109643, 0, 1.14647, -1.36066, 0.000676155, -0.364558 )
 
 [node name="Scandinavia" parent="Countries" instance=ExtResource( 33 )]
-transform = Transform( 1.128, 0, 0, 0, 1, 0, 0, 0, 1.059, -0.962781, 0, -0.241509 )
+transform = Transform( 1.12794, 0, -0.0105352, 0, 1, 0, 0.0112216, 0, 1.05895, -0.769648, 0.0001688, -0.451478 )
 
 [node name="MiddleEast" parent="Countries" instance=ExtResource( 34 )]
-transform = Transform( 1.181, 0, 0, 0, 1, 0, 0, 0, 1.234, -1.377, 0, 0.907 )
+transform = Transform( 1.1711, 0, -0.159446, 0, 1, 0, 0.152598, 0, 1.22366, -2.03456, 0.000953674, -0.307336 )
 
 [node name="WesternAustralia" parent="Countries" instance=ExtResource( 35 )]
-transform = Transform( 1.142, 0, 0, 0, 1, 0, 0, 0, 1.18, -1.208, 0, 0.624 )
+transform = Transform( 1.142, 0, 0, 0, 1, 0, 0, 0, 1.18, -1.21564, -0.000217438, 0.897039 )
 
 [node name="EasternAustralia" parent="Countries" instance=ExtResource( 36 )]
-transform = Transform( 1.275, 0, 0, 0, 1, 0, 0, 0, 1.16, -2.455, 0, 0.518 )
+transform = Transform( 1.27498, 0, -0.0056688, 0, 1, 0, 0.0062308, 0, 1.15999, -2.55914, -0.0001297, 0.668269 )
 
 [node name="Indonesia" parent="Countries" instance=ExtResource( 37 )]
-transform = Transform( 1.106, 0, 0, 0, 1, 0, 0, 0, 1.099, -0.861, 0, 0.361 )
+transform = Transform( 1.106, 0, 0, 0, 1, 0, 0, 0, 1.099, -0.611983, -3.52859e-05, 0.413507 )
 
 [node name="NewGuinea" parent="Countries" instance=ExtResource( 38 )]
-transform = Transform( 1.024, 0, 0, 0, 1, 0, 0, 0, 1.063, 0.316833, 0, 0.148943 )
+transform = Transform( 1.024, 0, 0, 0, 1, 0, 0, 0, 1.063, 0.222, -0.000109673, 0.282921 )
 
 [node name="China" parent="Countries" instance=ExtResource( 39 )]
-transform = Transform( 1.101, 0, 0, 0, 1, 0, 0, 0, 1.093, -0.626, 0, 0.068 )
+transform = Transform( 1.09307, 0, -0.130969, 0, 1, 0, 0.131927, 0, 1.08513, -1.19517, 0.00079155, -0.933779 )
 
 [node name="Mongolia" parent="Countries" instance=ExtResource( 41 )]
-transform = Transform( 0.938, 0, 0, 0, 1, 0, 0, 0, 0.852, 0.993, 0.198, -1.369 )
+transform = Transform( 0.928489, 0, -0.121019, 0, 1, 0, 0.133235, 0, 0.843361, 0.401053, 0.198844, -2.44299 )
 
 [node name="India" parent="Countries" instance=ExtResource( 40 )]
-transform = Transform( 1.044, 0, 0, 0, 1, 0, 0, 0, 1.162, -0.228, 0, 0.498 )
+transform = Transform( 1.04143, 0, -0.0815628, 0, 1, 0, 0.0732802, 0, 1.15913, -0.53509, 0.000340939, 0.0100982 )
 
 [node name="Siam" parent="Countries" instance=ExtResource( 42 )]
-transform = Transform( 1.014, 0, 0, 0, 1, 0, 0, 0, 1.183, 0.121, 0, 0.597 )
+transform = Transform( 1.01193, 0, 0.0755587, 0, 1, 0, -0.0647646, 0, 1.18058, 0.627879, -0.000704288, 1.48894 )
 
 [node name="Afghanistan" parent="Countries" instance=ExtResource( 43 )]
-transform = Transform( 1.146, 0, 0, 0, 1, 0, 0, 0, 1.1, -1.09368, 0, 0.113679 )
+transform = Transform( 1.13759, 0, -0.133027, 0, 1, 0, 0.13859, 0, 1.09193, -1.63405, 0.000842094, -0.952572 )
 
 [node name="Ural" parent="Countries" instance=ExtResource( 44 )]
-transform = Transform( 0.959, 0, 0, 0, 1, 0, 0, 0, 1.039, 0.347, 0, -0.481 )
+transform = Transform( 0.95703, 0, -0.0665605, 0, 1, 0, 0.0614355, 0, 1.03687, 0.395163, 0.000267506, -0.784883 )
 
 [node name="Siberia" parent="Countries" instance=ExtResource( 45 )]
-transform = Transform( 0.968, 0, 0, 0, 1, 0, 0, 0, 1.076, 0.53762, 0, -0.133144 )
+transform = Transform( 0.961211, 0, -0.127216, 0, 1, 0, 0.114447, 0, 1.06845, 0.0575376, 0.0807705, -0.918432 )
 
 [node name="Yakutsk" parent="Countries" instance=ExtResource( 46 )]
-transform = Transform( 1.05219, -0.0012403, -0.0391269, 0, 0.9995, -0.0315569, 0.0413039, 0.0315958, 0.996733, -0.496, 0, -1.08 )
+transform = Transform( 1.053, 0, 0.00116703, 0, 1, 0, -0.00123135, 0, 0.997999, 0.292522, -0.0501595, -0.40559 )
 
 [node name="Irkutsk" parent="Countries" instance=ExtResource( 47 )]
-transform = Transform( 0.935, 0, 0, 0, 1, 0, 0, 0, 1.054, 1.063, 0, -0.17 )
+transform = Transform( 0.924946, 0, -0.154153, 0, 1, 0, 0.136749, 0, 1.04267, 0.27216, 0.000842571, -1.23668 )
 
 [node name="Japan" parent="Countries" instance=ExtResource( 49 )]
-transform = Transform( 1.017, 0, 0, 0, 1, 0, 0, 0, 1.086, 0.266, 0, -0.075 )
+transform = Transform( 1.017, 0, 0, 0, 1, 0, 0, 0, 1.086, 1.95697, -0.000533581, 0.617088 )
 
 [node name="Kamchatka" parent="Countries" instance=ExtResource( 48 )]
-transform = Transform( 1.062, 0, 0, 0, 1, 0, 0, 0, 1.083, 0.048, 0, -0.076 )
+transform = Transform( 1.04593, 0, -0.187689, 0, 1, 0, 0.184049, 0, 1.06661, -1.05391, 0.00119734, -1.59602 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 6.094, 6.282, -4.43 )

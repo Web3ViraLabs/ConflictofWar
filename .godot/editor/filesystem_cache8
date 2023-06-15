@@ -1,0 +1,539 @@
+2a60927148abd1d33b818b535e306557
+::res://::1686862869
+Conquest.apple-touch-icon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Conquest.icon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Conquest.png::CompressedTexture2D::-1::0::0::1::::<><>::
+default_env.tres::::-1::1686862532::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1686862532::0::1::::<><>::
+icon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Map1.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/customisation/untitled_1.gltf
+README.md::TextFile::-1::1686862532::0::1::::<><>::
+Screenshot_2023-04-23-17-53-32-86_5182afb1e5dcc3a5a3e6e92bebd624fa.png::CompressedTexture2D::-1::0::0::1::::<><>::
+test.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Map1.tscn<>res://Source/Gameplay/Map/Country/Countries/Afghanistan.tscn
+::res://addons/::1686862688
+::res://addons/SmoothScroll/::1686862688
+class-icon.svg::CompressedTexture2D::-1::0::0::1::::<><>::
+plugin.cfg::TextFile::-1::1686862532::0::1::::<><>::
+plugin.gd::GDScript::-1::1686862532::0::1::::<>RefCounted<>::
+SmoothScrollContainer.gd::GDScript::-1::1686862532::0::1::::<>ScrollContainer<>::
+::res://Assets/::1686862689
+::res://Assets/Audio/::1686862688
+drop_002.ogg::AudioStreamOggVorbis::2936381887819958814::1686862532::1686862874::1::::<><>::
+drop_003.ogg::AudioStreamOggVorbis::5227388490323378080::1686862532::1686862874::1::::<><>::
+glitch_001.ogg::AudioStreamOggVorbis::4514233904060684004::1686862532::1686862874::1::::<><>::
+glitch_002.ogg::AudioStreamOggVorbis::4426995790049348668::1686862532::1686862874::1::::<><>::
+::res://Assets/Audio/loops/::1686862688
+mixkit-sports-highlights-51.mp3::AudioStreamMP3::-1::0::0::1::::<><>::
+::res://Assets/Create-Conflict-Screen (1)/::1686862688
+back.png::CompressedTexture2D::-1::0::0::1::::<><>::
+background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+body-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Create-Button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+header.png::CompressedTexture2D::-1::0::0::1::::<><>::
+incremental-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+minus.png::CompressedTexture2D::-1::0::0::1::::<><>::
+plus.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reference-image.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/customisation/::1686862689
+Active-Tab.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-4.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-5.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-6.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-7.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar-8.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar.png::CompressedTexture2D::-1::0::0::1::::<><>::
+back-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+back.png::CompressedTexture2D::-1::0::0::1::::<><>::
+background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+background_1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+badge2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+badge.png::CompressedTexture2D::-1::0::0::1::::<><>::
+bet-info-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+blue.png::CompressedTexture2D::-1::0::0::1::::<><>::
+body-container.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (7).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (8).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (9).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (10).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (11).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose Map (12).png::CompressedTexture2D::-1::0::0::1::::<><>::
+Choose_Map_27.png::CompressedTexture2D::-1::0::0::1::::<><>::
+color.png::CompressedTexture2D::-1::0::0::1::::<><>::
+create-lobby-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+custom.gd::GDScript::-1::1686862532::0::1::::<>Node<>::
+Dice-1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-4.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-5.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-6.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice-7.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice.png::CompressedTexture2D::-1::0::0::1::::<><>::
+exit-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-4.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-5.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-6.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame-7.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Fără titlu1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Fără titlu4.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Fără titlu7.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Fără titlu.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Game-name-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+green.png::CompressedTexture2D::-1::0::0::1::::<><>::
+header.png::CompressedTexture2D::-1::0::0::1::::<><>::
+image2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+image.png::CompressedTexture2D::-1::0::0::1::::<><>::
+inActive-Tab.png::CompressedTexture2D::-1::0::0::1::::<><>::
+input-field.png::CompressedTexture2D::-1::0::0::1::::<><>::
+lower-key.png::CompressedTexture2D::-1::0::0::1::::<><>::
+map.png::CompressedTexture2D::-1::0::0::1::::<><>::
+next-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+pink.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Play-Conflict-Screen.png::CompressedTexture2D::-1::0::0::1::::<><>::
+players-icon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+players-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+purple.png::CompressedTexture2D::-1::0::0::1::::<><>::
+red.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Reference-image.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reference-screen.png::CompressedTexture2D::-1::0::0::1::::<><>::
+send-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+start-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+switch-plug.png::CompressedTexture2D::-1::0::0::1::::<><>::
+switch.png::CompressedTexture2D::-1::0::0::1::::<><>::
+title-bar.png::CompressedTexture2D::-1::0::0::1::::<><>::
+total pool.png::CompressedTexture2D::-1::0::0::1::::<><>::
+total-games-panel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+tournment-button.png::CompressedTexture2D::-1::0::0::1::::<><>::
+troop.png::CompressedTexture2D::-1::0::0::1::::<><>::
+untitled_1.gltf::PackedScene::2928112802860007200::1686862532::1686862875::1::::<><>::
+upper-key.png::CompressedTexture2D::-1::0::0::1::::<><>::
+yellow.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Fonts/::1686862689
+::res://Assets/Fonts/Agrandir-Font-Family/::1686862689
+Agrandir-GrandHeavy.otf::::-1::0::0::0::::<><>::
+Agrandir-GrandLight.otf::::-1::0::0::0::::<><>::
+Agrandir-Narrow.otf::::-1::0::0::0::::<><>::
+Agrandir-Regular.otf::::-1::0::0::0::::<><>::
+Agrandir-TextBold.otf::::-1::0::0::0::::<><>::
+Agrandir-ThinItalic.otf::::-1::0::0::0::::<><>::
+Agrandir-Tight.otf::::-1::0::0::0::::<><>::
+Agrandir-WideBlackItalic.otf::::-1::0::0::0::::<><>::
+Agrandir-WideLight.otf::::-1::0::0::0::::<><>::
+::res://Assets/Fonts/eastman_grotesque/::1686862689
+Eastman-Grotesque-Black-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Black-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Bold-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Bold-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Demi-Bold-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Demi-Bold-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Extrabold-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Extrabold-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Extralight-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Extralight-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Heavy-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Heavy-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Light-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Light-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Medium-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Medium-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Regular-Offset-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Regular-Offset-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Regular-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Thin-Italic-trial.otf::::-1::0::0::0::::<><>::
+Eastman-Grotesque-Thin-trial.otf::::-1::0::0::0::::<><>::
+Eastman_grotesque_by_Zetafonts.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Fonts/minnie_2/::1686862689
+001.jpg::CompressedTexture2D::-1::0::0::1::::<><>::
+Minnie.ttf::::-1::0::0::0::::<><>::
+::res://Assets/Fonts/no_virus/::1686862689
+More Info.txt::TextFile::-1::1686862532::0::1::::<><>::
+No Virus.jpg::CompressedTexture2D::-1::0::0::1::::<><>::
+No Virus.otf::::-1::0::0::0::::<><>::
+No Virus.ttf::::-1::0::0::0::::<><>::
+::res://Assets/Fonts/Play/::1686862689
+OFL.txt::TextFile::-1::1686862532::0::1::::<><>::
+Play-Bold.ttf::::-1::0::0::0::::<><>::
+Play-Regular.ttf::::-1::0::0::0::::<><>::
+::res://Assets/Graphics/::1686862691
+Loading-Screen-background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/AboutMenu/::1686862689
+CancelButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+font.txt::TextFile::-1::1686862532::0::1::::<><>::
+Logo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MenuButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Slider.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/ChooseMap/::1686862690
+BackButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Counter.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+DownButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+fonts.txt::TextFile::-1::1686862532::0::1::::<><>::
+Header.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Map.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MapCard1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MapCard2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MapCard3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NextButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Star.png::CompressedTexture2D::-1::0::0::1::::<><>::
+TournmentButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+UpButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/HomeScreen/::1686862690
+Background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+BannerUpdates.png::CompressedTexture2D::-1::0::0::1::::<><>::
+BattleButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+DiscordButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+LevelState.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MenuButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NotificationButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+ProfileCharector.png::CompressedTexture2D::-1::0::0::1::::<><>::
+ShopButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+TwitterButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WalletConnectButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Icons/::1686862690
+Draft.png::CompressedTexture2D::-1::0::0::1::::<><>::
+exitLeft.png::CompressedTexture2D::-1::0::0::1::::<><>::
+fastForward.png::CompressedTexture2D::-1::0::0::1::::<><>::
+gear.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Icons/reset_icons/::1686862690
+reset_disabled.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reset_focused.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reset_hover.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reset_normal.png::CompressedTexture2D::-1::0::0::1::::<><>::
+reset_pressed.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Map/::1686862691
+full map.png::CompressedTexture2D::-1::0::0::1::::<><>::
+map drawing.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Map/Borders/::1686862690
+Afghanistan.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Alaska.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Alberta.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Argentina.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Brazil.png::CompressedTexture2D::-1::0::0::1::::<><>::
+CentralAmerica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+China.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Congo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EastAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EasternAustralia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EasternUnitedStates.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Egypt.png::CompressedTexture2D::-1::0::0::1::::<><>::
+GreatBritain.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Greenland.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Iceland.png::CompressedTexture2D::-1::0::0::1::::<><>::
+India.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Indonesia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Irkutsk.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Japan.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Kamchatka.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Madagascar.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MiddleEast.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Mongolia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NewGuinea.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthernEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthwestTerritory.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ontario.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Peru.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Quebec.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Scandinavia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Siam.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Siberia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+SouthAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+SouthernEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ukraine.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ural.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Venezuela.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternAustralia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternUnitedStates.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Yakutsk.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Map/Countries/::1686862691
+Afghanistan.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Alaska.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Alberta.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Argentina.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Brazil.png::CompressedTexture2D::-1::0::0::1::::<><>::
+CentralAmerica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+China.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Congo.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EastAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EasternAustralia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EasternUnitedStates.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Egypt.png::CompressedTexture2D::-1::0::0::1::::<><>::
+GreatBritain.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Greenland.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Iceland.png::CompressedTexture2D::-1::0::0::1::::<><>::
+India.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Indonesia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Irkutsk.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Japan.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Kamchatka.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Madagascar.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MiddleEast.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Mongolia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NewGuinea.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthernEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NorthwestTerritory.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ontario.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Peru.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Quebec.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Scandinavia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Siam.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Siberia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+SouthAfrica.png::CompressedTexture2D::-1::0::0::1::::<><>::
+SouthernEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ukraine.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Ural.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Venezuela.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternAustralia.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternEurope.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WesternUnitedStates.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Yakutsk.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Map/Countries/Test/::1686862691
+TestBorder.png::CompressedTexture2D::-1::0::0::1::::<><>::
+TestCountry.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/ProfileScreen/::1686862691
+AssetsPanel.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Avatar.png::CompressedTexture2D::-1::0::0::1::::<><>::
+BackButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Background.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Badge.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Color.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo_1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo_2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Demo_3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+DiceRollsProgress.png::CompressedTexture2D::-1::0::0::1::::<><>::
+DiceRollsProgressBack.png::CompressedTexture2D::-1::0::0::1::::<><>::
+DiceSkin.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_1.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_2.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_3.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_4.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_5.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Dice_6.png::CompressedTexture2D::-1::0::0::1::::<><>::
+EditButton.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Frame.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Leaderboard.png::CompressedTexture2D::-1::0::0::1::::<><>::
+LevelIcon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+LostIcon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MaskTexture.png::CompressedTexture2D::-1::0::0::1::::<><>::
+NFT.png::CompressedTexture2D::-1::0::0::1::::<><>::
+RankIcon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+TotalIcon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+TransperentBackground.png::CompressedTexture2D::-1::0::0::1::::<><>::
+WinIcon.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Assets/Graphics/Textures/::1686862691
+old_paper.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Images/::1686862691
+AllPlaced.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+Attack.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+Deploy.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+GameStarted.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+Lobby.png::CompressedTexture2D::-1::0::0::1::::<><>::
+MainMenu.png::CompressedTexture2D::-1::0::0::1::::<><>::
+Move.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+QuitGame.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+Settings.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+SomePlaced.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+StartGame.PNG::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Source/::1686862692
+IMPACT.TTF::::-1::0::0::0::::<><>::
+Screenshot_2023-04-23-17-53-32-86_5182afb1e5dcc3a5a3e6e92bebd624fa.png::CompressedTexture2D::-1::0::0::1::::<><>::
+::res://Source/Background/::1686862691
+Background.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Graphics/Textures/old_paper.png
+::res://Source/Button/::1686862691
+Button.gd::GDScript::-1::1686862532::0::1::::SmartButton<>Button<>::
+Button.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Button/Button.gd<>res://Assets/Audio/glitch_002.ogg<>res://Assets/Audio/glitch_001.ogg
+::res://Source/Gameplay/::1686862692
+Game.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Background/Background.tscn<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/Game/Game.gd<>res://Source/Gameplay/PlayersQueue/PlayersQueue.tscn<>res://Assets/Graphics/Icons/exitLeft.png<>res://Source/Button/Button.tscn<>res://Source/Gameplay/Map.tscn<>res://Source/Gameplay/Map/Country/Countries/Scandinavia.tscn<>res://Source/Gameplay/Map/Country/Countries/Greenland.tscn<>res://Source/Gameplay/Map/Country/Countries/EasternAustralia.tscn<>res://Source/Gameplay/Map/Country/Countries/EastAfrica.tscn<>res://Source/Gameplay/Map/Country/Countries/Yakutsk.tscn<>res://Source/Gameplay/Map/Country/Countries/Iceland.tscn<>res://Source/Gameplay/Map/Country/Countries/SouthAfrica.tscn<>res://Source/Gameplay/Map/Country/Countries/MiddleEast.tscn<>res://Source/Gameplay/Map/Country/Countries/Peru.tscn<>res://Source/Gameplay/Map/Country/Countries/Ural.tscn<>res://Source/Gameplay/Map/Country/Countries/Egypt.tscn<>res://Source/Gameplay/Map/Country/Countries/Ontario.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternAustralia.tscn<>res://Source/Gameplay/Map/Country/Countries/India.tscn<>res://Source/Gameplay/Map/Country/Countries/Quebec.tscn<>res://Source/Gameplay/Map/Country/Countries/Siam.tscn<>res://Source/Gameplay/Map/Country/Countries/Kamchatka.tscn<>res://Source/Gameplay/Map/Country/Countries/Venezuela.tscn<>res://Source/Gameplay/Map/Country/Countries/Congo.tscn<>res://Source/Gameplay/Map/Country/Countries/Mongolia.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthAfrica.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthernEurope.tscn<>res://Source/Gameplay/Map/Country/Countries/Siberia.tscn<>res://Source/Gameplay/Map/Country/Countries/Indonesia.tscn<>res://Source/Gameplay/Map/Country/Countries/NewGuinea.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternUnitedStates.tscn<>res://Source/Gameplay/Map/Country/Countries/SouthernEurope.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthwestTerritory.tscn<>res://Source/Gameplay/Map/Country/Countries/EasternUnitedStates.tscn<>res://Source/Gameplay/Map/Country/Countries/Irkutsk.tscn<>res://Source/Gameplay/Map/Country/Countries/Madagascar.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternEurope.tscn<>res://Source/Gameplay/Map/Country/Countries/Japan.tscn<>res://Source/Gameplay/Map/Country/Countries/GreatBritain.tscn<>res://Source/Gameplay/Map/Country/Countries/Ukraine.tscn<>res://Source/Gameplay/Map/Country/Countries/Alaska.tscn<>res://Source/Gameplay/Map/Country/Countries/Alberta.tscn<>res://Source/Gameplay/Map/Country/Countries/Afghanistan.tscn<>res://Source/Gameplay/Map/Country/Countries/Argentina.tscn<>res://Source/Gameplay/Map/Country/Countries/Brazil.tscn<>res://Source/Gameplay/Map/Country/Countries/CentralAmerica.tscn<>res://Source/Gameplay/Map/Country/Countries/China.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/QuitGameMenu.tscn<>res://Assets/Audio/glitch_001.ogg<>res://Assets/Audio/glitch_002.ogg<>res://Assets/Graphics/Icons/gear.png<>res://Source/Gameplay/HUD/OptionsMenu.tscn
+game_play.gd::GDScript::-1::1686862532::0::1::::<>Node<>::
+Map.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Graphics/Map/map drawing.png
+::res://Source/Gameplay/Game/::1686862691
+Game.gd::GDScript::-1::1686862532::0::1::::Game<>Spatial<>::
+Game.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Background/Background.tscn<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/Game/Game.gd<>res://Source/Gameplay/PlayersQueue/PlayersQueue.tscn<>res://Assets/Graphics/Icons/exitLeft.png<>res://Source/Button/Button.tscn<>res://Source/Gameplay/Map.tscn<>res://Source/Gameplay/Map/Country/Countries/Brazil3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Peru3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Venezuela3d.tscn<>res://Source/Gameplay/Map/Country/Countries/CentalAmerica3d.tscn<>res://Screenshot_2023-04-23-17-53-32-86_5182afb1e5dcc3a5a3e6e92bebd624fa.png<>res://Source/Gameplay/Map/Country/Countries/EasernUsa.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternUnitedStates3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Quebec3d.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthwestTerritory3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Alaska3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Alberta3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Ontario3d.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthAfrica3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Greenland3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Egypt3d.tscn<>res://Source/Gameplay/Map/Country/Countries/EastAfrica3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Congo3d.tscn<>res://Source/Gameplay/Map/Country/Countries/SouthAfrica3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Madagascar3d.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternEurope3d.tscn<>res://Source/Gameplay/Map/Country/Countries/GreatBritain3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Iceland3d.tscn<>res://Source/Gameplay/Map/Country/Countries/NorthernEurope3d.tscn<>res://Source/Gameplay/Map/Country/Countries/SouthernEurope3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Ukraine3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Scandinavia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/MiddleEast3d.tscn<>res://Source/Gameplay/Map/Country/Countries/WesternAustralia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/EasternAustralia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Indonesia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/NewGuinea3d.tscn<>res://Source/Gameplay/Map/Country/Countries/China3d.tscn<>res://Source/Gameplay/Map/Country/Countries/India3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Mongolia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Siam3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Afghanistan3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Ural3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Siberia3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Yakutsk3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Irkutsk3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Kamchatka3d.tscn<>res://Source/Gameplay/Map/Country/Countries/Japan3d.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/QuitGameMenu.tscn<>res://Assets/Audio/glitch_001.ogg<>res://Assets/Audio/glitch_002.ogg<>res://Assets/Graphics/Icons/gear.png<>res://Source/Gameplay/HUD/OptionsMenu.tscn<>res://Source/Gameplay/Map/Country/Countries/Argentina3d.tscn
+::res://Source/Gameplay/HUD/::1686862691
+AboutMenu.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+AboutMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Graphics/AboutMenu/Demo.png<>res://Assets/Graphics/AboutMenu/Slider.png<>res://Assets/Graphics/AboutMenu/Logo.png<>res://Source/Menu/VMenu.gd<>res://Source/TextureButton/SmartTextureButton.tscn<>res://Assets/Graphics/AboutMenu/CancelButton.png<>res://Assets/Graphics/AboutMenu/MenuButton.png<>res://Assets/Fonts/Agrandir-Font-Family/Agrandir-TextBold.otf<>res://Source/Gameplay/HUD/AboutMenu.gd
+ActivePlayerHUD.gd::GDScript::-1::1686862532::0::1::::ActivePlayerHUD<>HBoxContainer<>::
+ActivePlayerHUD.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/glitch_001.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Icons/Draft.png<>res://Source/Gameplay/HUD/ActivePlayerHUD.gd<>res://Assets/Graphics/Textures/old_paper.png<>res://Assets/Audio/glitch_002.ogg<>res://Assets/Graphics/Icons/fastForward.png
+AttackingMenu.gd::GDScript::-1::1686862532::0::1::::AttackingMenu<>TextureRect<>::
+AttackingMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/AttackingMenu.gd<>res://Source/Button/Button.tscn
+chosemap.gd::GDScript::-1::1686862532::0::1::::<>Node<>::
+Customization.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/customisation/Avatar-1.png<>res://Assets/customisation/Avatar-4.png<>res://Assets/customisation/Dice-3.png<>res://Assets/customisation/Frame-5.png<>res://Assets/customisation/Dice-6.png<>res://Assets/customisation/red.png<>res://Assets/customisation/Frame-1.png<>res://Assets/customisation/Avatar-2.png<>res://Assets/customisation/Dice-1.png<>res://Assets/customisation/Dice-7.png<>res://Assets/customisation/pink.png<>res://Assets/customisation/Dice-2.png<>res://Assets/customisation/Frame-2.png<>res://Assets/customisation/Frame-7.png<>res://Assets/customisation/Avatar-7.png<>res://Assets/customisation/Dice-5.png<>res://Assets/customisation/purple.png<>res://Assets/customisation/Avatar-5.png<>res://Assets/customisation/Frame-3.png<>res://Assets/customisation/blue.png<>res://Assets/customisation/Frame-6.png<>res://Assets/customisation/inActive-Tab.png<>res://Assets/customisation/Dice-4.png<>res://Assets/customisation/Fără titlu1.png<>res://Assets/customisation/Avatar-6.png<>res://Assets/customisation/Frame-4.png<>res://Assets/customisation/yellow.png<>res://Assets/customisation/green.png<>res://Assets/customisation/Active-Tab.png<>res://Assets/customisation/Avatar-3.png<>res://Assets/customisation/custom.gd<>res://Assets/customisation/back-button.png<>res://Assets/customisation/Choose Map (7).png<>res://Assets/customisation/Choose Map (11).png<>res://Assets/customisation/Choose Map (12).png<>res://Assets/customisation/Choose Map (8).png<>res://Assets/customisation/Choose Map (9).png<>res://Assets/customisation/Choose Map (10).png<>res://Assets/customisation/Frame.png<>res://Assets/customisation/color.png<>res://Assets/customisation/troop.png<>res://Assets/customisation/Dice.png<>res://Assets/customisation/badge2.png<>res://Assets/customisation/Avatar.png<>res://Assets/customisation/Choose_Map_27.png
+DeployMenu.gd::GDScript::-1::1686862532::0::1::::DeployMenu<>TextureRect<>::
+DeployMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/DeployMenu.gd<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn
+GameOverMenu.gd::GDScript::-1::1686862532::0::1::::GameoverMenu<>TextureRect<>::
+GameOverMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/GameOverMenu.gd<>res://Source/Button/Button.tscn
+HostGameMenu.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+HostGameMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/HostGameMenu.gd<>res://Assets/Create-Conflict-Screen (1)/back.png<>res://Assets/Create-Conflict-Screen (1)/header.png<>res://Assets/Create-Conflict-Screen (1)/reference-image.png<>res://Assets/Create-Conflict-Screen (1)/body-panel.png<>res://Assets/Create-Conflict-Screen (1)/Create-Button.png<>res://Assets/Create-Conflict-Screen (1)/minus.png<>res://Assets/Create-Conflict-Screen (1)/incremental-panel.png<>res://Assets/Create-Conflict-Screen (1)/plus.png<>res://Assets/Create-Conflict-Screen (1)/background.png
+JoinCodeMenu.gd::GDScript::-1::1686862532::0::1::::<>ColorRect<>::
+JoinCodeMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/JoinCodeMenu.gd<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn
+JoinGameMenu.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+JoinGameMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/JoinGameMenu.gd<>res://Source/Gameplay/HUD/JoinCodeMenu.tscn
+Lobby.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+Lobby.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map.tscn<>res://Source/Background/Background.tscn<>res://Assets/customisation/Fără titlu7.png<>res://Assets/customisation/input-field.png<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Menu/HMenu.tscn<>res://Source/Button/Button.tscn<>res://Source/Gameplay/HUD/Lobby.gd
+LobbySearchInstance.gd::GDScript::-1::1686862532::0::1::::LobbySearchInstance<>VBoxContainer<>::
+LobbySearchInstance.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/LobbySearchInstance.gd<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn
+LobbySearchInstanceWjoin.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/LobbySearchInstance.gd<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn
+LobbySearchInstanceWname.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/LobbySearchInstance.gd<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn
+MessageInstance.gd::GDScript::-1::1686862532::0::1::::<>HBoxContainer<>::
+MessageInstance.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/MessageInstance.gd
+MoveMenu.gd::GDScript::-1::1686862532::0::1::::MoveMenu<>TextureRect<>::
+MoveMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/MoveMenu.gd<>res://Source/Button/Button.tscn
+OptionsMenu.gd::GDScript::-1::1686862532::0::1::::OptionsMenu<>TextureRect<>::
+OptionsMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Button/Button.tscn<>res://Source/Menu/HMenu.tscn<>res://Source/Gameplay/HUD/OptionsMenu.gd
+PlayerActivity.gd::GDScript::-1::1686862532::0::1::::PlayerActivity<>TextureRect<>::
+PlayerActivity.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/PlayerActivity.gd
+PlayerListInstance.gd::GDScript::-1::1686862532::0::1::::PlayerListInstance<>VBoxContainer<>::
+PlayerListInstance.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Button/Button.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/HUD/PlayerListInstance.gd
+ProfileScreen.gd::GDScript::-1::1686862532::0::1::::ProfileScreen<>Control<>::
+ProfileScreen.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Graphics/ProfileScreen/Demo_2.png<>res://Assets/Graphics/ProfileScreen/TransperentBackground.png<>res://Source/Gameplay/HUD/ProfileScreen.gd<>res://Assets/Fonts/minnie_2/Minnie.ttf<>res://Assets/Graphics/ProfileScreen/EditButton.png<>res://Assets/Graphics/ProfileScreen/Color.png<>res://Assets/Graphics/ProfileScreen/Avatar.png<>res://Assets/Graphics/ProfileScreen/LevelIcon.png<>res://Assets/Graphics/ProfileScreen/Demo_1.png<>res://Assets/Graphics/ProfileScreen/Demo_3.png<>res://Assets/Graphics/ProfileScreen/TotalIcon.png<>res://Assets/Graphics/ProfileScreen/RankIcon.png<>res://Assets/Graphics/ProfileScreen/Background.png<>res://Assets/Graphics/ProfileScreen/LostIcon.png<>res://Assets/Graphics/ProfileScreen/WinIcon.png<>res://addons/SmoothScroll/SmoothScrollContainer.gd<>res://Assets/Graphics/ProfileScreen/AssetsPanel.png<>res://Assets/Fonts/Play/Play-Regular.ttf<>res://Assets/Graphics/ProfileScreen/Frame.png<>res://Assets/Graphics/ProfileScreen/NFT.png<>res://Assets/Graphics/ProfileScreen/DiceSkin.png<>res://Assets/Graphics/ProfileScreen/Badge.png<>res://Assets/Graphics/ProfileScreen/Dice_4.png<>res://Assets/Graphics/ProfileScreen/Dice_2.png<>res://Assets/Graphics/ProfileScreen/Dice_5.png<>res://Assets/Graphics/ProfileScreen/Dice_6.png<>res://Assets/Graphics/ProfileScreen/Dice_3.png<>res://Assets/Graphics/ProfileScreen/MaskTexture.png<>res://Assets/Graphics/ProfileScreen/Leaderboard.png<>res://Source/TextureButton/SmartTextureButton.tscn<>res://Assets/Graphics/ProfileScreen/BackButton.png
+QuitGameMenu.gd::GDScript::-1::1686862532::0::1::::QuitGameMenu<>TextureRect<>::
+QuitGameMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/QuitGameMenu.gd<>res://Source/Button/Button.tscn
+SameDeviceMenu.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+SameDeviceMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Menu/HMenu.tscn<>res://Source/Button/Button.tscn<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/Map.tscn<>res://Source/Background/Background.tscn<>res://Source/Gameplay/HUD/SameDeviceMenu.gd
+StartGameMenu.gd::GDScript::-1::1686862532::0::1::::StartGameMenu<>TextureRect<>::
+StartGameMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/StartGameMenu.gd<>res://Source/Button/Button.tscn
+::res://Source/Gameplay/Map/::1686862691
+::res://Source/Gameplay/Map/Country/::1686862692
+Country.gd::GDScript::-1::1686862532::0::1::::Country<>Area2D<>::
+Country.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.gd<>res://Assets/Graphics/Map/Countries/Afghanistan.png<>res://Assets/Graphics/Map/Borders/Afghanistan.png<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Audio/drop_002.ogg<>res://Assets/Audio/drop_003.ogg
+::res://Source/Gameplay/Map/Country/Countries/::1686862692
+Afghanistan3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Afghanistan.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Map1.tscn
+Alaska3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Alaska.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Alaska.png<>res://Assets/Graphics/Map/Borders/Alaska.png
+Alberta3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Alberta.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/Alberta.png<>res://Assets/Graphics/Map/Countries/Alberta.png
+Argentina3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Argentina.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png
+Brazil3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Brazil.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/Brazil.png<>res://Assets/Graphics/Map/Countries/Brazil.png
+CentalAmerica3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+CentralAmerica.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/CentralAmerica.png<>res://Assets/Graphics/Map/Borders/CentralAmerica.png
+China3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+China.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/China.png<>res://Assets/Graphics/Map/Borders/China.png
+Congo3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Congo.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Congo.png<>res://Assets/Graphics/Map/Borders/Congo.png
+county3d.gd::GDScript::-1::1686862532::0::1::::Country<>Area<>::
+EasernUsa.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+EastAfrica3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+EastAfrica.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/EastAfrica.png<>res://Assets/Graphics/Map/Borders/EastAfrica.png
+EasternAustralia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+EasternAustralia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/EasternAustralia.png<>res://Assets/Graphics/Map/Borders/EasternAustralia.png
+EasternUnitedStates.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/EasternUnitedStates.png<>res://Assets/Graphics/Map/Borders/EasternUnitedStates.png
+Egypt3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Egypt.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Egypt.png<>res://Assets/Graphics/Map/Borders/Egypt.png
+GreatBritain3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+GreatBritain.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/GreatBritain.png<>res://Assets/Graphics/Map/Borders/GreatBritain.png
+Greenland3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Greenland.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Greenland.png<>res://Assets/Graphics/Map/Borders/Greenland.png
+Iceland3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Iceland.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Iceland.png<>res://Assets/Graphics/Map/Borders/Iceland.png
+India3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+India.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/India.png<>res://Assets/Graphics/Map/Borders/India.png
+Indonesia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Indonesia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Indonesia.png<>res://Assets/Graphics/Map/Borders/Indonesia.png
+Irkutsk3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Irkutsk.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Irkutsk.png<>res://Assets/Graphics/Map/Borders/Irkutsk.png
+Japan3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Japan.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/Japan.png<>res://Assets/Graphics/Map/Countries/Japan.png
+Kamchatka3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Kamchatka.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/Kamchatka.png<>res://Assets/Graphics/Map/Countries/Kamchatka.png
+Madagascar3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Madagascar.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Madagascar.png<>res://Assets/Graphics/Map/Borders/Madagascar.png
+MiddleEast3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+MiddleEast.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/MiddleEast.png<>res://Assets/Graphics/Map/Borders/MiddleEast.png
+Mongolia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Mongolia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/Mongolia.png<>res://Assets/Graphics/Map/Countries/Mongolia.png
+NewGuinea3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+NewGuinea.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/NewGuinea.png<>res://Assets/Graphics/Map/Countries/NewGuinea.png
+NorthAfrica3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+NorthAfrica.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/NorthAfrica.png<>res://Assets/Graphics/Map/Countries/NorthAfrica.png
+NorthernEurope3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+NorthernEurope.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/NorthernEurope.png<>res://Assets/Graphics/Map/Borders/NorthernEurope.png
+NorthwestTerritory3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+NorthwestTerritory.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/NorthwestTerritory.png<>res://Assets/Graphics/Map/Borders/NorthwestTerritory.png
+Ontario3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Ontario.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Ontario.png<>res://Assets/Graphics/Map/Borders/Ontario.png
+Peru3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Peru.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Peru.png<>res://Assets/Graphics/Map/Borders/Peru.png
+Quebec3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Quebec.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Quebec.png<>res://Assets/Graphics/Map/Borders/Quebec.png
+Scandinavia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Scandinavia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Scandinavia.png<>res://Assets/Graphics/Map/Borders/Scandinavia.png
+Siam3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Siam.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Siam.png<>res://Assets/Graphics/Map/Borders/Siam.png
+Siberia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Siberia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Siberia.png<>res://Assets/Graphics/Map/Borders/Siberia.png
+SouthAfrica3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+SouthAfrica.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/SouthAfrica.png<>res://Assets/Graphics/Map/Borders/SouthAfrica.png
+SouthernEurope3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+SouthernEurope.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/SouthernEurope.png<>res://Assets/Graphics/Map/Borders/SouthernEurope.png
+test_country.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_003.ogg<>res://Assets/Graphics/Map/Countries/Afghanistan.png<>res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Borders/Afghanistan.png<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Country.gd
+Ukraine3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Ukraine.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Ukraine.png<>res://Assets/Graphics/Map/Borders/Ukraine.png
+Ural3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Ural.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Ural.png<>res://Assets/Graphics/Map/Borders/Ural.png
+Venezuela3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Venezuela.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Venezuela.png<>res://Assets/Graphics/Map/Borders/Venezuela.png
+WesternAustralia3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+WesternAustralia.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/WesternAustralia.png<>res://Assets/Graphics/Map/Borders/WesternAustralia.png
+WesternEurope3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+WesternEurope.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Borders/WesternEurope.png<>res://Assets/Graphics/Map/Countries/WesternEurope.png
+WesternUnitedStates3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+WesternUnitedStates.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/WesternUnitedStates.png<>res://Assets/Graphics/Map/Borders/WesternUnitedStates.png
+Yakutsk3d.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/drop_002.ogg<>res://Assets/Graphics/Map/Countries/Argentina.png<>res://Assets/Graphics/Map/Borders/Argentina.png<>res://Assets/Audio/drop_003.ogg<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Gameplay/Map/Country/Countries/county3d.gd
+Yakutsk.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Map/Country/Country.tscn<>res://Assets/Graphics/Map/Countries/Yakutsk.png<>res://Assets/Graphics/Map/Borders/Yakutsk.png
+::res://Source/Gameplay/Player/::1686862692
+Player.gd::GDScript::-1::1686862532::0::1::::Player<>Node2D<>::
+Player.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/Player/Player.gd<>res://Source/Gameplay/HUD/ActivePlayerHUD.tscn<>res://Source/Gameplay/HUD/DeployMenu.tscn<>res://Source/Gameplay/HUD/AttackingMenu.tscn<>res://Source/Gameplay/HUD/MoveMenu.tscn<>res://Source/Gameplay/HUD/GameOverMenu.tscn
+::res://Source/Gameplay/PlayersQueue/::1686862692
+PlayersQueue.gd::GDScript::-1::1686862532::0::1::::PlayersQueue<>Spatial<>::
+PlayersQueue.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Gameplay/PlayersQueue/PlayersQueue.gd
+::res://Source/Gameplay/StateMachine/::1686862692
+state_machine.gd::GDScript::-1::1686862532::0::1::::StateMachine<>Node<>::
+::res://Source/Gameplay/StateMachine/CountryStates/::1686862692
+ActiveState.gd::GDScript::-1::1686862532::0::1::::ActiveState<>CountryState<>::
+CountryState.gd::GDScript::-1::1686862532::0::1::::CountryState<>StateMachine<>::
+InActiveState.gd::GDScript::-1::1686862532::0::1::::InActiveState<>CountryState<>::
+SelectedState.gd::GDScript::-1::1686862532::0::1::::SelectedState<>CountryState<>::
+::res://Source/Gameplay/StateMachine/PlayerStates/::1686862692
+AttackState.gd::GDScript::-1::1686862532::0::1::::AttackState<>PlayerState<>::
+DraftState.gd::GDScript::-1::1686862532::0::1::::DraftState<>PlayerState<>::
+FortifyState.gd::GDScript::-1::1686862532::0::1::::FortifyState<>PlayerState<>::
+PlacementState.gd::GDScript::-1::1686862532::0::1::::PlacementState<>PlayerState<>::
+PlayerState.gd::GDScript::-1::1686862532::0::1::::PlayerState<>StateMachine<>::
+::res://Source/Main/::1686862692
+ChooseMap.gd::GDScript::-1::1686862532::0::1::::<>Control<>::
+ChooseMap.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/customisation/players-panel.png<>res://Source/TextureButton/SmartTextureButton.tscn<>res://Assets/Graphics/ChooseMap/TournmentButton.png<>res://Assets/Graphics/ChooseMap/BackButton.png<>res://Assets/customisation/header.png<>res://Assets/Graphics/ChooseMap/DownButton.png<>res://Assets/Fonts/minnie_2/Minnie.ttf<>res://Assets/Graphics/ChooseMap/Map.png<>res://Assets/Graphics/ChooseMap/NextButton.png<>res://Assets/Graphics/ChooseMap/Counter.png<>res://Source/Main/ChooseMap.gd<>res://Assets/Graphics/ChooseMap/MapCard1.png<>res://Assets/Graphics/ChooseMap/MapCard3.png<>res://Assets/Graphics/ChooseMap/MapCard2.png<>res://Assets/Fonts/eastman_grotesque/Eastman-Grotesque-Bold-trial.otf<>res://Source/Gameplay/HUD/StartGameMenu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Menu/HMenu.tscn<>res://Source/Button/Button.tscn<>res://Source/Gameplay/HUD/OptionsMenu.tscn<>res://Source/Menu/VMenu.tscn<>res://Assets/customisation/background.png<>res://Assets/Graphics/ChooseMap/Star.png<>res://Assets/customisation/create-lobby-button.png<>res://Assets/customisation/switch.png<>res://Assets/customisation/switch-plug.png<>res://Assets/customisation/Game-name-panel.png<>res://Assets/customisation/Fără titlu4.png<>res://Assets/customisation/players-icon.png<>res://Assets/customisation/bet-info-panel.png<>res://Source/Gameplay/HUD/LobbySearchInstanceWjoin.tscn
+Main.gd::GDScript::-1::1686862532::0::1::::Main<>Control<>::
+Main.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Graphics/HomeScreen/Background.png<>res://Source/Main/Menu.tscn<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Source/Main/Main.gd<>res://Assets/Graphics/Icons/reset_icons/reset_focused.png<>res://Assets/Graphics/Icons/reset_icons/reset_hover.png<>res://Assets/Graphics/Icons/reset_icons/reset_normal.png<>res://Assets/Graphics/Icons/reset_icons/reset_disabled.png
+Menu.gd::GDScript::-1::1686862532::0::1::::MainMenu<>Control<>::
+Menu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/VMenu.tscn<>res://Source/Button/Button.tscn<>res://Source/Main/Menu.gd<>res://Assets/Fonts/no_virus/No Virus.ttf<>res://Assets/Graphics/Textures/old_paper.png<>res://Source/Gameplay/HUD/StartGameMenu.tscn<>res://Source/Gameplay/HUD/OptionsMenu.tscn<>res://Source/Menu/HMenu.tscn<>res://Source/Gameplay/HUD/AboutMenu.tscn<>res://Source/TextureButton/SmartTextureButton.tscn<>res://Assets/Graphics/HomeScreen/BattleButton.png<>res://Assets/Graphics/HomeScreen/MenuButton.png<>res://Assets/Graphics/HomeScreen/NotificationButton.png<>res://Assets/Graphics/HomeScreen/LevelState.png<>res://Assets/Graphics/HomeScreen/WalletConnectButton.png<>res://Assets/Graphics/HomeScreen/DiscordButton.png<>res://Assets/Graphics/HomeScreen/TwitterButton.png<>res://Assets/Graphics/HomeScreen/ShopButton.png<>res://Assets/Graphics/HomeScreen/BannerUpdates.png<>res://Assets/customisation/Frame-1.png<>res://Assets/customisation/Avatar-2.png<>res://Assets/customisation/Avatar-4.png<>res://Assets/customisation/Avatar-1.png<>res://Assets/customisation/Avatar-6.png<>res://Assets/customisation/Avatar-5.png<>res://Assets/customisation/Avatar-7.png<>res://Assets/customisation/Avatar-3.png<>res://Assets/customisation/Frame-2.png<>res://Assets/customisation/Frame-3.png<>res://Assets/customisation/Frame-4.png<>res://Assets/customisation/Frame-5.png<>res://Assets/customisation/Frame-7.png<>res://Assets/customisation/Frame-6.png
+::res://Source/Menu/::1686862692
+HMenu.gd::GDScript::-1::1686862532::0::1::::HMenu<>HBoxContainer<>::
+HMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/HMenu.gd
+VMenu.gd::GDScript::-1::1686862532::0::1::::VMenu<>VBoxContainer<>::
+VMenu.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Menu/VMenu.gd
+::res://Source/Server/::1686862692
+HighLevelServer.gd::GDScript::-1::1686862532::0::1::::HighLevelServer<>Node<>::
+HighLevelServer.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Server/HighLevelServer.gd
+Server.gd::GDScript::-1::1686862532::0::1::::<>Node<>::
+WebSocketsServer.gd::GDScript::-1::1686862532::0::1::::WebSocketsServer<>Node<>::
+WebSocketsServer.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Source/Server/WebSocketsServer.gd
+::res://Source/TextureButton/::1686862692
+customization_button.gd::GDScript::-1::1686862532::0::1::::<>TextureButton<>::
+SmartTextureButton.gd::GDScript::-1::1686862532::0::1::::SmartTextureButton<>TextureButton<>::
+SmartTextureButton.tscn::PackedScene::-1::1686862532::0::1::::<><>::res://Assets/Audio/glitch_002.ogg<>res://Assets/Audio/glitch_001.ogg<>res://Source/TextureButton/customization_button.gd
